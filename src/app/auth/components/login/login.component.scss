@@ -1,0 +1,62 @@
+form {
+  font-family: "Raleway-Medium";
+}
+mat-card-title {
+  font-family: "Raleway-Bold";
+  color: #2d2d2d;
+  text-align: initial;
+}
+label {
+  margin-bottom: 10px;
+}
+input {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #d4d4d4;
+  font-family: "Raleway-Medium";
+}
+button {
+  width: 100%;
+  border-radius: 10px;
+  font-family: "Raleway-Bold";
+}
+.card {
+  border-radius: 20px;
+  padding: 40px 40px 10px 40px;
+  box-shadow: 0px 15px 50px #00000029;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 15px 0px;
+}
+.form-login {
+  padding: 15px 0px;
+}
+.form-remember {
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+}
+.form-remember span {
+  margin-left: 5px;
+}
+.forgot-password {
+  color: #066d6f;
+}
+.submit {
+  margin-top: 30px;
+}
+.register {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+.register a {
+  color: #20b0b3;
+  font-family: "Raleway-Bold";
+  text-decoration: none;
+}

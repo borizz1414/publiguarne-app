@@ -1,1 +1,51 @@
-/* You can add global styles to this file, and also import other style files */
+
+
+/* BACKGROUND AUTH */
+.row-container{
+  height: 100%;
+}
+.container-auth {
+  background: url("assets/img/fondo/fondo-login.png") 0% 0% no-repeat
+    padding-box;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+/* GRIDS */
+.row {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Raleway-Regular', sans-serif;
+}
+
+/* FONTS */
+@font-face {
+  font-family: "OpenSans-Light";
+  src: url("assets/fonts/OpenSans-Light.ttf");
+}
+@font-face {
+  font-family: "Raleway-Bold";
+  src: url("assets/fonts/Raleway-Bold.ttf");
+}
+@font-face {
+  font-family: "Raleway-Light";
+  src: url("assets/fonts/Raleway-Light.ttf");
+}
+@font-face {
+  font-family: "Raleway-Medium";
+  src: url("assets/fonts/Raleway-Medium.ttf");
+}
+@font-face {
+  font-family: "Raleway-Regular";
+  src: url("assets/fonts/Raleway-Regular.ttf");
+}
+@font-face {
+  font-family: "Raleway-SemiBold";
+  src: url("assets/fonts/Raleway-SemiBold.ttf");
+}
