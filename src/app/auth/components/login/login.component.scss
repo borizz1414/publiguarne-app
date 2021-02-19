@@ -1,13 +1,23 @@
 form {
   font-family: "Raleway-Medium";
+
+}
+mat-card{
+  padding: 0;
+  overflow: hidden;
 }
 mat-card-title {
   font-family: "Raleway-Bold";
   color: #2d2d2d;
   text-align: initial;
+  padding:20px 0px 0px 28px;
 }
+// mat-card-content{
+//   0px 28px 0px 28px
+// }
 label {
   margin-bottom: 10px;
+  color: #2D2D2D;
 }
 input {
   padding: 10px;
@@ -22,7 +32,7 @@ button {
 }
 .card {
   border-radius: 20px;
-  padding: 40px 40px 10px 40px;
+  // padding: 40px 40px 10px 40px;
   box-shadow: 0px 15px 50px #00000029;
 }
 
@@ -32,8 +42,9 @@ button {
   text-align: left;
   padding: 15px 0px;
 }
-.form-login {
-  padding: 15px 0px;
+.form-login{
+  padding:0px 28px 0px 28px;
+  margin: 12px;
 }
 .form-remember {
   text-align: left;
@@ -50,6 +61,7 @@ button {
   margin-top: 30px;
 }
 .register {
+  color:#2D2D2D;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -59,4 +71,31 @@ button {
   color: #20b0b3;
   font-family: "Raleway-Bold";
   text-decoration: none;
+}
+.social-networks-login{
+  background: #066D6F;
+  font-family: 'Raleway-Regular';
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 28px;
+}
+.social-text{
+  padding: 15px;
+}
+.social-icons img{
+  width: 48px;
+  margin: 0 15px;
+  cursor: pointer;
+}
+.circle{
+  margin-top: -20px;
+  width:16px;
+  background: white;
+  color: black;
+  font-family: 'Raleway-Bold';
+  padding: 14px;
+  border-radius: 65%;
+  box-shadow: 0px 0px 15px #00000029;
 }
