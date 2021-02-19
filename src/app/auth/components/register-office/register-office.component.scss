@@ -26,34 +26,7 @@ button {
   border-radius: 10px !important;
   font-family: "Raleway-Bold";
 }
-input[type="checkbox"] {
-  position: relative;
-  cursor: pointer;
-}
-input[type="checkbox"]:before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 13px;
-  height: 13px;
-  top: 0;
-  left: 0;
-  border: 2px solid #d4d4d4;
-  border-radius: 3px;
-  background-color: white;
-}
-input[type="checkbox"]:checked:after {
-  content: "";
-  display: block;
-  width: 4px;
-  height: 7px;
-  border: solid $secondary;
-  border-width: 0 2px 2px 0;
-  transform: rotate(45deg);
-  position: absolute;
-  top: 2px;
-  left: 6px;
-}
+
 .card {
   padding: 0;
   background: #ffffff;

@@ -26,10 +26,10 @@
                             </div>
                         </div>
                         <div class="submit">
-                            <button mat-raised-button color="primary">Ingresar</button>
+                            <button mat-raised-button color="primary">Registrarse</button>
                         </div>
                         <div class="register">
-                            ¿Ya tienes una cuenta? <a href="">Ingresa</a>
+                            ¿Ya tienes una cuenta? <a [routerLink]="['/auth/login']" routerLinkActive="router-link-active" >Ingresa</a>
                         </div>
                     </form>
                     <div class="social-networks-login">
