@@ -90,10 +90,8 @@ input[type="checkbox"]:checked:after {
 }
 .register {
   color: #2d2d2d;
-  display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-top: 8px;
+  margin: 18px 0px;
 }
 .register a {
   color: $secondary;
@@ -148,4 +146,9 @@ input[type="checkbox"]:checked:after {
 }
 .form-password label {
   margin-bottom: 16px;
+}
+@media (min-width:350px){
+  .col-xs-10{
+    max-width: 100%;
+  }
 }
