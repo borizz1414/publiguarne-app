@@ -6,7 +6,7 @@
                     Regístrate en Publiguarne
                 </mat-card-title>
                 <mat-card-content>
-                    <form class="form-login">
+                    <form class="form-login" (ngSubmit)="register()">
                         <div class="form-control">
                             <label for="name">Nombre completo *</label>
                             <input type="text" placeholder="Ingresa tu nombre completo">
@@ -29,7 +29,7 @@
                             </div>
                         </div>
                         <div class="submit">
-                            <button mat-raised-button color="primary">Registrarse</button>
+                            <button mat-raised-button color="primary" type="submit">Registrarse</button>
                         </div>
                         <div class="register">
                             ¿Ya tienes una cuenta? <a [routerLink]="['/auth/login']">Ingresa</a>
