@@ -8,7 +8,7 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
   styleUrls: ['./register.component.scss'],
 })
 export class RegisterComponent implements OnInit {
-  form : FormGroup;
+  form: FormGroup;
   constructor(public dialog: MatDialog, private fb: FormBuilder) {
     this.buildForm();
   }
@@ -16,20 +16,18 @@ export class RegisterComponent implements OnInit {
   ngOnInit(): void {}
   private buildForm() {
     this.form = this.fb.group({
-      fullname: ['', Validators.required]
-    })
+      fullname: ['', Validators.required],
+    });
   }
   register(event) {
     const dialogRef = this.dialog.open(AuthDialogComponent, {
       width: '462px',
-      data: {content:'success'}
+      data: { content: 'policy' },
+      panelClass: 'custom-modal'
     });
 
-    dialogRef.afterClosed().subscribe(result => {
+    dialogRef.afterClosed().subscribe((result) => {
       console.log('The dialog was closed');
- 
     });
   }
-
-
 }

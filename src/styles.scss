@@ -47,3 +47,8 @@ body {
   font-family: "Raleway-SemiBold";
   src: url("assets/fonts/Raleway-SemiBold.ttf");
 }
+
+/* DIALOGS */
+.myapp-no-padding-dialog .mat-dialog-container {
+  border-radius: 20px !important;
+}
