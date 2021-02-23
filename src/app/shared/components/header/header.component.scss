@@ -1,0 +1,50 @@
+@import '../../../theme/vars.scss';
+nav{
+    background: $primary;
+    height: 64px;
+}
+.items-nav{
+    height: 100%;
+}
+input[type=text]{
+    background: #08797B;
+    border:0;   
+    width: 80%;
+    border-radius: 10px;
+    padding: 10px 10px;
+    font-family: 'Raleway-Light';
+    color: white;
+    
+}
+input::placeholder{
+    color: white;
+}
+.icon-input {
+    margin-bottom: -32px;
+    mat-icon{
+        z-index: 2;
+    }
+
+  }
+.nav-icons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 10px;
+    color: white;
+    border-left: 1px solid #08797B;
+    mat-icon{
+        cursor:pointer;
+    }
+}
+.profile{
+    display: flex;
+    align-items: center;
+    img,p{
+        margin-left: 26px;
+        
+    }
+    p,mat-icon{
+        color: white;
+    }
+}

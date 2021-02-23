@@ -1,0 +1,8 @@
+@import '../../../theme/vars.scss';
+footer{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background: $primary;
+    height: 64px;
+}
