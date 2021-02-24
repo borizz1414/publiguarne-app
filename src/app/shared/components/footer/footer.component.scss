@@ -5,4 +5,27 @@ footer{
     width: 100%;
     background: $primary;
     height: 64px;
+    color: white;
+}
+
+@media (min-width:350px){
+    .social-networks{
+        i{
+            margin: 0px 10px;
+        }
+    }
+    .icon-phone{
+        margin: 0px 10px;
+    }
+}
+@media (min-width:768px){
+    .social-networks{
+        i{
+            margin: 0px 20px;
+            font-size:20px;
+        }
+    }
+    .icon-phone{
+        margin: 0px 20px;
+    }
 }

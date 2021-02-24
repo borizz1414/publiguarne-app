@@ -22,7 +22,7 @@ export class RegisterComponent implements OnInit {
   register(event) {
     const dialogRef = this.dialog.open(AuthDialogComponent, {
       width: '462px',
-      data: { content: 'policy' },
+      data: { content: 'success' },
       panelClass: 'custom-modal'
     });
 
