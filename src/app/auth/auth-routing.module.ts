@@ -12,10 +12,10 @@ const routes: Routes = [
         path: 'login',
         component: LoginComponent,
       },
-      {
-        path: 'register-office',
-        component: RegisterOfficeComponent,
-      },
+      // {
+      //   path: 'register-office',
+      //   component: RegisterOfficeComponent,
+      // },
       {
         path: 'register-user',
         component: RegisterComponent,
