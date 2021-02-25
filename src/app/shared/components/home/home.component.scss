@@ -1,0 +1,15 @@
+@import "../../../theme/vars.scss";
+
+mat-sidenav {
+  width: 20%;
+  border: 0;
+}
+.example-container {
+  position: absolute;
+  top: 64px;
+  bottom: 64px;
+  z-index: 0;
+  left: 0;
+  right: 0;
+  background: white;
+}

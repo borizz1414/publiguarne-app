@@ -1,6 +1,8 @@
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
 @import "~@angular/material/theming";
+@import "../../app/theme/vars.scss";
+
 // Plus imports for other components in your app.
 
 // Include the common styles for Angular Material. We include this here so that you only
@@ -33,3 +35,85 @@ $publiguarne-app-theme: mat-light-theme(
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
 @include angular-material-theme($publiguarne-app-theme);
+
+
+/* INPUTS ANIMATIONS */ 
+input[type=text],input[type=password] {
+  box-sizing: border-box;
+  border: 1px solid #d4d4d4;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+input[type=text]:focus,input[type=password]:focus {
+  border: 1px solid #2d2d2d;
+}
+
+// STYLE INPUT CHECKBOX
+input[type="checkbox"] {
+  position: relative;
+  cursor: pointer;
+}
+input[type="checkbox"]:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  top: 0;
+  left: 0;
+  border: 2px solid #d4d4d4;
+  border-radius: 3px;
+  background-color: white;
+}
+input[type="checkbox"]:checked:after {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 7px;
+  border: solid $secondary;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 2px;
+  left: 6px;
+}
+
+/* FLEXBOX CLASS */
+.d-flex {
+  display: flex;
+}
+.j-content-center {
+  justify-content: center;
+}
+.j-content-fs {
+  justify-content: flex-start;
+}
+.j-content-fe {
+  justify-content: flex-end;
+}
+.j-content-sa {
+  justify-content: space-around;
+}
+.j-content-sb {
+  justify-content: space-between;
+}
+.j-content-se {
+  justify-content: space-evenly;
+}
+.a-items-center {
+  align-items: center;
+}
+.a-items-fs {
+  align-items: flex-start;
+}
+.a-items-fe {
+  align-items: flex-end;
+}
+.f-direction-c{
+  flex-direction: column;
+}
+.f-direction-r{
+  flex-direction: row;
+}

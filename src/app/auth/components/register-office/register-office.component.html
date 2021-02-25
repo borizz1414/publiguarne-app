@@ -3,24 +3,21 @@
         <div class="col-xs-10 col-sm-7 col-md-6 col-lg-4">
             <div class="card">
                 <mat-card-title>
-                    Regístrate en Publiguarne
+                    Registra tu oficina virtual
                 </mat-card-title>
                 <mat-card-content>
-                    <form [formGroup]="form" (ngSubmit)="register($event)" class="form-login" >
+                    <form class="form-login">
                         <div class="form-control">
-                            <label for="name">Nombre completo *</label>
-                            <input type="text" formControlName="fullname" placeholder="Ingresa tu nombre completo">
+                            <label for="">Nombre completo *</label>
+                            <input type="text" placeholder="Ingresa tu nombre completo">
                         </div>
                         <div class="form-control">
-                            <label for="username">Usuario ó correo electrónico *</label>
+                            <label for="">Usuario ó correo electrónico *</label>
                             <input type="text" placeholder="Ingresa tu usuario ó correo electrónico">
                         </div>
-                        <div class="form-control form-password">
-                            <label for="password">Contraseña *</label>
-                            <div class="icon-input">
-                                <span class="icon-eye-off"><img src="assets/img/svg/icon-eye-off.svg" alt=""></span>
-                            </div>
-                            <input type="password" placeholder="Ingresa tu contraseña">
+                        <div class="form-control">
+                            <label for="">Telefono *</label>
+                            <input type="tel" placeholder="Ingresa tu número de teléfono">
                         </div>
                         <div class="form-remember">
                             <div>
@@ -29,10 +26,11 @@
                             </div>
                         </div>
                         <div class="submit">
-                            <button mat-raised-button color="primary" >Registrarse</button>
+                            <button mat-raised-button color="primary">Registrarse</button>
                         </div>
                         <div class="register">
-                            ¿Ya tienes una cuenta? <a [routerLink]="['/auth/login']">Ingresa</a>
+                            ¿Ya tienes una cuenta? <a [routerLink]="['/auth/login']"
+                                routerLinkActive="router-link-active">Ingresa</a>
                         </div>
                     </form>
                     <div class="social-networks-login">

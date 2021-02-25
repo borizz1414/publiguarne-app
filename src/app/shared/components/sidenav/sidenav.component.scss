@@ -1,0 +1,29 @@
+@import "../../../theme/vars.scss";
+
+mat-sidenav {
+  width: 20%;
+  border: 0;
+}
+.menu {
+  .menu-item {
+    width: 80%;
+    margin: 10px;
+    border-radius: 10px;
+    color: white;
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+  h3 {
+    color: $primary;
+    font-family: "Raleway-Bold";
+    margin: 20px;
+  }
+}
+.active-bg {
+  background: $primary;
+  h3 {
+    color: white;
+  }
+}

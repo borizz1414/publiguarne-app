@@ -1,0 +1,34 @@
+@import "../../../theme/vars.scss";
+footer {
+  position: absolute;
+  bottom: 0px;
+  z-index: 1;
+  width: 100%;
+  background: $primary;
+  height: 64px;
+  color: white;
+}
+#logo {
+  cursor: pointer;
+}
+@media (min-width: 350px) {
+  .social-networks {
+    i {
+      margin: 0px 10px;
+    }
+  }
+  .icon-phone {
+    margin: 0px 4px;
+  }
+}
+@media (min-width: 768px) {
+  .social-networks {
+    i {
+      margin: 0px 20px;
+      font-size: 20px;
+    }
+  }
+  .icon-phone {
+    margin: 0px 10px;
+  }
+}

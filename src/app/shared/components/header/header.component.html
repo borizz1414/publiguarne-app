@@ -1,0 +1,54 @@
+<header>
+    <nav class="row">
+
+        <div class="col-xs-1">
+            <div class="row center-xs middle-xs items-nav">
+                <div class="col-xs-12">
+                    <img id="logo" src="assets/img/logo/logo.png" (click)="redirectHome()" width="46px" alt="">
+                </div>
+
+            </div>
+        </div>
+        <div class="col-xs-5 col-md-6">
+            <div class="row start-xs middle-xs items-nav">
+                <div class="col-xs-12">
+                    <mat-form-field class="example-full-width">
+                        <!-- <span matPrefix>+1 &nbsp;</span> -->
+                        <input type="tel" matInput placeholder="Buscar en Publiguarne...">
+                        <mat-icon matSuffix>search</mat-icon>
+                    </mat-form-field>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-4 col-md-3">
+            <div class="nav-icons">
+                <div class="nav-menu-icon">
+                    <mat-icon>radio</mat-icon>
+                </div>
+                <div class="nav-menu-icon">
+                    <mat-icon>insert_invitation</mat-icon>
+                </div>
+                <div class="nav-menu-icon">
+                    <mat-icon>live_tv</mat-icon>
+                </div>
+                <div class="nav-menu-icon">
+                    <mat-icon>notifications</mat-icon>
+                </div>
+                <div class="nav-menu-icon">
+                    <mat-icon>question_answer</mat-icon>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-2 profile">
+            <img src="assets/img/profile.png" alt="">
+            <p>BRK</p>
+            <mat-icon [matMenuTriggerFor]="menu">expand_more</mat-icon>
+            <mat-menu #menu="matMenu">
+                <button mat-menu-item>Perfil</button>
+                <button mat-menu-item>Convertirme en Oficina</button>
+                <button mat-menu-item>Cerrar sesión</button>
+            </mat-menu>
+        </div>
+
+    </nav>
+</header>
