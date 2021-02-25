@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LayoutComponent } from '../layout/layout.component';
-import { DashboardContainer } from './containers/dashboard/dashboard.container';
+import { VirtualOfficeContainer } from './containers/virtual-office/virtual-office.container';
 
 const routes: Routes = [
   {
@@ -10,7 +10,7 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        component: DashboardContainer,
+        component: VirtualOfficeContainer,
       },
     ],
   },
@@ -20,4 +20,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class HomeRoutingModule {}
+export class VirtualOfficeRoutingModule {}

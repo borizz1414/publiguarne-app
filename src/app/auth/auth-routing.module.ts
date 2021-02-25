@@ -17,7 +17,7 @@ const routes: Routes = [
       //   component: RegisterOfficeComponent,
       // },
       {
-        path: 'register-user',
+        path: 'register',
         component: RegisterComponent,
       },
       {

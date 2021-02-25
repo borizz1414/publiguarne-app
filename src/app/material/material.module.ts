@@ -8,8 +8,9 @@ import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import {MatDialogModule} from '@angular/material/dialog';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatSidenavModule} from '@angular/material/sidenav';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-
 @NgModule({
   declarations: [],
   imports: [
@@ -21,6 +22,9 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     MatIconModule,
     MatButtonModule,
     MatDialogModule,
+    MatMenuModule,
+    MatSidenavModule,
+    /*FONT AWESOME*/
     FontAwesomeModule
   ],
   exports: [
@@ -31,7 +35,9 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     MatIconModule,
     MatButtonModule,
     MatDialogModule,
-    FontAwesomeModule
+    MatMenuModule,
+    MatSidenavModule,
+    FontAwesomeModule,
   ],
 })
 export class MaterialModule {}

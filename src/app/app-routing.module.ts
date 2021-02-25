@@ -11,6 +11,10 @@ const routes: Routes = [
     loadChildren: () => import('./home/home.module').then((m) => m.HomeModule),
   },
   {
+    path: 'virtual-office',
+    loadChildren: () => import('./virtual-office/virtual-office.module').then((m) => m.VirtualOfficeModule),
+  },
+  {
     path: '**',
     redirectTo: 'auth',
   },

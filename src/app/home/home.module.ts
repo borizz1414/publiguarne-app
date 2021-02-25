@@ -3,15 +3,10 @@ import { CommonModule } from '@angular/common';
 
 import { HomeRoutingModule } from './home-routing.module';
 import { MaterialModule } from '../material/material.module';
-import { DashboardComponent } from './components/dashboard/dashboard.component';
-
+import { DashboardContainer } from './containers/dashboard/dashboard.container';
 
 @NgModule({
-  declarations: [DashboardComponent],
-  imports: [
-    CommonModule,
-    HomeRoutingModule,
-    MaterialModule
-  ]
+  declarations: [DashboardContainer],
+  imports: [CommonModule, HomeRoutingModule, MaterialModule],
 })
-export class HomeModule { }
+export class HomeModule {}

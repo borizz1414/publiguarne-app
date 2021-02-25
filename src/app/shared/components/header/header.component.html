@@ -4,7 +4,7 @@
         <div class="col-xs-1">
             <div class="row center-xs middle-xs items-nav">
                 <div class="col-xs-12">
-                    <img src="assets/img/logo/logo.png" width="46px" alt="">
+                    <img id="logo" src="assets/img/logo/logo.png" (click)="redirectHome()" width="46px" alt="">
                 </div>
 
             </div>
@@ -12,10 +12,11 @@
         <div class="col-xs-5 col-md-6">
             <div class="row start-xs middle-xs items-nav">
                 <div class="col-xs-12">
-                    <div class="icon-input">
-                        <mat-icon>search</mat-icon>
-                    </div>
-                    <input type="text" placeholder="Buscar en Publiguarne...">
+                    <mat-form-field class="example-full-width">
+                        <!-- <span matPrefix>+1 &nbsp;</span> -->
+                        <input type="tel" matInput placeholder="Buscar en Publiguarne...">
+                        <mat-icon matSuffix>search</mat-icon>
+                    </mat-form-field>
                 </div>
             </div>
         </div>
@@ -41,7 +42,12 @@
         <div class="col-xs-2 profile">
             <img src="assets/img/profile.png" alt="">
             <p>BRK</p>
-            <mat-icon>expand_more</mat-icon>
+            <mat-icon [matMenuTriggerFor]="menu">expand_more</mat-icon>
+            <mat-menu #menu="matMenu">
+                <button mat-menu-item>Perfil</button>
+                <button mat-menu-item>Convertirme en Oficina</button>
+                <button mat-menu-item>Cerrar sesión</button>
+            </mat-menu>
         </div>
 
     </nav>
