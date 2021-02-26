@@ -1,8 +1,13 @@
 @import "../../../theme/vars.scss";
 
-mat-sidenav {
-  width: 20%;
-  border: 0;
+img{
+  width: 50px;
+  height: 50px;
+  margin-right: 12px;
+  margin-left: 14px;
+}
+.group-item{
+  padding: 5px;
 }
 .menu {
   .menu-item {
@@ -18,7 +23,7 @@ mat-sidenav {
   h3 {
     color: $primary;
     font-family: "Raleway-Bold";
-    margin: 20px;
+    margin: 14px;
   }
 }
 .active-bg {
