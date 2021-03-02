@@ -1,0 +1,27 @@
+@import "../../../theme//vars.scss";
+.container-posts-office{
+    margin-top: 30px;
+}
+textarea {
+    background: $secondary;
+    border: 0;
+    height: 117px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 3px 3px;
+    font-family: "Raleway-Light";
+    color: white;
+  }
+  
+  mat-form-field {
+    width: 95%;
+    background: $secondary;
+    padding: 0px 10px;
+    border-radius: 30px;
+    color: white;
+  }
+  ::ng-deep .mat-form-field-label {
+    color: #444 !important;
+    margin-bottom: 10px;
+
+  }

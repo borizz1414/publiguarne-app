@@ -11,7 +11,8 @@ import { BannerRightComponent } from './components/banner-right/banner-right.com
 
 
 @NgModule({
-  declarations: [DashboardContainer, PublicityComponent, ListDirectoryComponent, BannerRightComponent],
+  declarations: [DashboardContainer, PublicityComponent,ListDirectoryComponent,BannerRightComponent],
+  exports:[PublicityComponent,ListDirectoryComponent,BannerRightComponent],
   imports: [CommonModule, DirectoryRoutingModule, MaterialModule, SharedModule],
 })
 export class DirectoryModule {}
