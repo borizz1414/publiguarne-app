@@ -7,11 +7,11 @@ const routes: Routes = [
     loadChildren: () => import('./auth/auth.module').then((m) => m.AuthModule),
   },
   {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then((m) => m.HomeModule),
+    path: 'directorio',
+    loadChildren: () => import('./directory/directory.module').then((m) => m.DirectoryModule),
   },
   {
-    path: 'virtual-office',
+    path: 'oficina-virtual',
     loadChildren: () => import('./virtual-office/virtual-office.module').then((m) => m.VirtualOfficeModule),
   },
   {

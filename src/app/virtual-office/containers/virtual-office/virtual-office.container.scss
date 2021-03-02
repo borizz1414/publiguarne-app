@@ -1,0 +1,45 @@
+@import "../../../theme/vars.scss";
+
+mat-sidenav {
+  width: 25%;
+  min-width: 280px;
+  border: 0;
+}
+/* Tamaño del scroll */
+::ng-deep .mat-drawer-inner-container::-webkit-scrollbar {
+  width: 20px !important;
+}
+
+/* Estilos barra (thumb) de scroll */
+::ng-deep .mat-drawer-inner-container::-webkit-scrollbar-thumb {
+  background: $primary;
+  border-radius: 15px !important;
+}
+
+::ng-deep .mat-drawer-inner-container::-webkit-scrollbar-thumb:active {
+  background-color: #999999 !important;
+}
+
+::ng-deep .mat-drawer-inner-container::-webkit-scrollbar-thumb:hover {
+  background: $secondary !important;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Estilos track de scroll */
+::ng-deep .mat-drawer-inner-container::-webkit-scrollbar-track {
+  background: #e1e1e1 !important;
+  border-radius: 6px !important;
+}
+
+::ng-deep .mat-drawer-inner-container::-webkit-scrollbar-track:hover,
+::ng-deep .mat-drawer-inner-container::-webkit-scrollbar-track:active {
+  background: #d4d4d4 !important;
+}
+
+.example-container {
+  z-index: 0;
+  left: 0;
+  height: 100%;
+  right: 0;
+  background: white;
+}

@@ -5,16 +5,17 @@ import { FooterComponent } from './components/footer/footer.component';
 import { MaterialModule } from '../material/material.module';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { RouterModule } from '@angular/router';
-import { HomeComponent } from './components/home/home.component';
+
+
 
 @NgModule({
   declarations: [
     HeaderComponent,
     FooterComponent,
     SidenavComponent,
-    HomeComponent,
+
   ],
-  exports: [HeaderComponent, FooterComponent, HomeComponent],
+  exports: [HeaderComponent, FooterComponent,SidenavComponent],
   imports: [CommonModule, MaterialModule, RouterModule],
 })
 export class SharedModule {}
