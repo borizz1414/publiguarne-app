@@ -79,7 +79,9 @@ input[type="checkbox"]:checked:after {
   top: 2px;
   left: 6px;
 }
-
+.mat-card{
+  font-family: 'Raleway-Regular' !important;
+}
 /* FLEXBOX CLASS */
 .d-flex {
   display: flex;
