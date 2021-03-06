@@ -69,7 +69,20 @@ input[type=tel]:focus,input[type=email]:focus, textarea:focus {
 .container-plans-questions {
   padding: 0px 100px 0px 100px;
 }
-.title-plans,.support-text {
+.questions {
+    margin-bottom: 40px;
+}
+.quiestions-item{
+    background: $secondary;
+    height: 60px;
+    border-radius: 20px;
+    color:white;
+    margin-bottom: 10px;
+    i{
+        font-size: 20px;
+    }
+}
+.title-plans,.support-text,.questions {
   color: #43425d;
 }
 .level-plan {
