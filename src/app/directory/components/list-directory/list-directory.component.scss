@@ -6,6 +6,7 @@
 }
 .description {
   text-align: justify;
+  
 }
 input[type="text"] {
   background: #f5f5f5;
@@ -42,7 +43,7 @@ mat-icon {
 .card-directory {
   box-shadow: 0px 0px 5px #00000029;
   width: 44%;
-  padding: 15px;
+  padding: 18px;
   margin: 15px 10px 5px 0px;
 }
 h3,
@@ -116,7 +117,7 @@ i {
 }
 @media (min-width: 768px) {
   .card-directory {
-    width: 100%;
+    width:42%;
   }
 }
 

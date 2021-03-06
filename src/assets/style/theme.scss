@@ -85,6 +85,13 @@ input[type="checkbox"]:checked:after {
 .container-center{
   padding-right: 60px;
 }
+/* STYLES CUSTOMIZE */
+.input-login-root{
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #d4d4d4;
+  font-family: "Raleway-Medium";
+}
 /* FLEXBOX CLASS */
 .d-flex {
   display: flex;
@@ -121,4 +128,16 @@ input[type="checkbox"]:checked:after {
 }
 .f-direction-r{
   flex-direction: row;
+}
+.text-a-center{
+text-align: center;
+}
+.text-a-right{
+text-align: right;
+}
+.text-a-left{
+text-align: left;
+}
+.text-a-justify{
+text-align: justify;
 }

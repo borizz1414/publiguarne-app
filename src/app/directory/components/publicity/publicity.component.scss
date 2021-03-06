@@ -5,6 +5,7 @@
     background: #F7F7F7;
     height: 200px;
     border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px white !important; 
   }
   .container-directory{
     padding-left: 20px;
@@ -15,7 +16,7 @@
   .next-button{
     button{
       height: 60px;
-      border-radius: 50%;
+      border-radius: 50% !important;
       margin-left: -40px;
       color:white;
     }

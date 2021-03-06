@@ -15,9 +15,13 @@ const routes: Routes = [
     loadChildren: () => import('./virtual-office/virtual-office.module').then((m) => m.VirtualOfficeModule),
   },
   {
-    path: '**',
-    redirectTo: 'auth',
+    path: 'planes',
+    loadChildren: () => import('./plans/plans.module').then((m) => m.PlansModule),
   },
+  // {
+  //   path: '**',
+  //   redirectTo: 'auth',
+  // },
 ];
 
 @NgModule({
