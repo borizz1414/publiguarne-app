@@ -4,11 +4,13 @@ export const navigationDashboard= [
     {
         title    : 'Directorio',
         type     : 'item',
-        url:'/directorio'
+        url:'/directorio',
+        activeLink:'active-bg',
     },  
     {
         title    : 'Oficina Virtual',
         type     : 'group',
+        activeLink:'active-bg',
         url:'/oficina-virtual',
         children : [
             {
