@@ -34,7 +34,7 @@ export const navigationDashboard= [
             {
                 title    : 'Papelerías',
                 type     : 'item',
-                icon     : 'assets/img/sidenav/servicios-publicos.png',
+                icon     : 'assets/img/sidenav/papeleria.png',
                 url      : '/agro',
             },
             {

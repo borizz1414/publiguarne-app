@@ -51,6 +51,35 @@ textarea::placeholder{
   padding-right: 20px;
   padding-bottom: 5px;
 }
+::ng-deep .card-header{
+  .mat-card-header-text{
+  width: 73% !important;
+  }
+}
+.menu-post-card{
+  i{
+    font-size: 32px;
+    cursor: pointer;
+    color:#C2C2C2;
+  }
+}
+
+::ng-deep .mat-menu-office{
+
+  
+  .mat-menu-content{
+    button{
+      background-color: #E90303;
+      color: white;
+    }
+    button:hover{
+      background-color: hsl(0, 86%, 66%);
+    }
+    padding: 0;
+  }
+  min-height: 0px;
+  border-radius: 10px;
+}
 .mat-card-avatar{
   height: auto;
   width: auto;

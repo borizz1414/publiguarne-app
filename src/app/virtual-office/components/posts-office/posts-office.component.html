@@ -10,10 +10,15 @@
     </mat-form-field>
     <div class="container-posts">
         <mat-card class="post-card">
-            <mat-card-header>
+            <mat-card-header class="card-header">
                 <div mat-card-avatar class="example-header-image"><img src="assets/img/foto-perfil-4.png" alt=""></div>
                 <mat-card-title><b>Martha Gonzales</b></mat-card-title>
                 <mat-card-subtitle>Agosto 18 a las 2pm</mat-card-subtitle>
+                <div class="menu-post-card"><i [matMenuTriggerFor]="menu" class="fas fa-ellipsis-h"></i>
+                    <mat-menu #menu="matMenu" class="mat-menu-office">
+                      <button mat-menu-item>Reportar publicación</button>
+                    </mat-menu>
+                </div>
             </mat-card-header>
             <div class="post-img">
                 <img mat-card-image src="assets/img/post.png" alt="Photo of a Shiba Inu">
