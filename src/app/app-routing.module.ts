@@ -26,6 +26,14 @@ const routes: Routes = [
     path: 'eventos',
     loadChildren: () => import('./events/events.module').then((m) => m.EventsModule),
   },
+  {
+    path: 'clasificados',
+    loadChildren: () => import('./classified/classified.module').then((m) => m.ClassifiedModule),
+  },
+  {
+    path: 'labor-social',
+    loadChildren: () => import('./social-work/social-work.module').then((m) => m.SocialWorkModule),
+  },
   // {
   //   path: '**',
   //   redirectTo: 'auth',

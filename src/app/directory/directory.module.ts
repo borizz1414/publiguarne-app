@@ -8,10 +8,12 @@ import { SharedModule } from '../shared/shared.module';
 import { PublicityComponent } from './components/publicity/publicity.component';
 import { ListDirectoryComponent } from './components/list-directory/list-directory.component';
 import { BannerRightComponent } from './components/banner-right/banner-right.component';
+import { ClassifiedComponent } from '../classified/components/classified/classified.component';
+import { ClassifiedModule } from '../classified/classified.module';
 
 
 @NgModule({
-  declarations: [DashboardContainer, PublicityComponent,ListDirectoryComponent,BannerRightComponent],
+  declarations: [DashboardContainer, PublicityComponent,ListDirectoryComponent,BannerRightComponent,],
   exports:[PublicityComponent,ListDirectoryComponent,BannerRightComponent],
   imports: [CommonModule, DirectoryRoutingModule, MaterialModule, SharedModule],
 })

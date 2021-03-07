@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { navigationDashboard } from 'src/app/shared/navigations/navigation';
+import { navigationClassified, navigationDashboard, navigationSocialWork } from 'src/app/shared/navigations/navigation';
 
 @Component({
   selector: 'app-virtual-office',
@@ -8,6 +8,8 @@ import { navigationDashboard } from 'src/app/shared/navigations/navigation';
 })
 export class VirtualOfficeComponent implements OnInit {
   navigation = navigationDashboard;
+  navigationClassified = navigationClassified;
+  navigationSocialWork = navigationSocialWork;
   constructor() {}
 
   ngOnInit(): void {}

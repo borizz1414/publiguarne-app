@@ -10,10 +10,11 @@ import { PostsOfficeComponent } from './components/posts-office/posts-office.com
 import { PostsContainer } from './containers/posts/posts.container';
 import { AdsContainer } from './containers/ads/ads.container';
 import { SidebarRightContainer} from './containers/sidebar-right/sidebar-right.container';
+import { ClassifiedModule } from '../classified/classified.module';
 
 
 @NgModule({
   declarations: [VirtualOfficeComponent, PostsOfficeComponent, PostsContainer, AdsContainer, SidebarRightContainer],
-  imports: [CommonModule, VirtualOfficeRoutingModule, MaterialModule,SharedModule, DirectoryModule],
+  imports: [CommonModule, VirtualOfficeRoutingModule, MaterialModule,SharedModule, ClassifiedModule, DirectoryModule],
 })
 export class VirtualOfficeModule {}

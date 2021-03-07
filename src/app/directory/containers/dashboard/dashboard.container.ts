@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { navigationDashboard } from "../../../shared/navigations/navigation";
+import { navigationClassified, navigationDashboard, navigationSocialWork } from "../../../shared/navigations/navigation";
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.container.html',
@@ -8,6 +8,8 @@ import { navigationDashboard } from "../../../shared/navigations/navigation";
 export class DashboardContainer implements OnInit {
   showFiller = true;
   navigation = navigationDashboard;
+  navigationClassified = navigationClassified;
+  navigationSocialWork = navigationSocialWork;
   constructor() {}
 
   ngOnInit(): void {
