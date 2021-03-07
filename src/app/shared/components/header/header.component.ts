@@ -13,7 +13,7 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
   redirectHome(){
-    this.router.navigate(['/home']);
+    this.router.navigate(['/directorio']);
   }
 
 }

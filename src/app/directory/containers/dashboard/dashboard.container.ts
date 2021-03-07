@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { navigationDashboard } from "../../../shared/navigations/navigation-dashboard";
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.container.html',
@@ -7,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardContainer implements OnInit {
   showFiller = true;
+  navigation = navigationDashboard;
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+  }
 }

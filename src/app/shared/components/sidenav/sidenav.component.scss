@@ -10,10 +10,17 @@ img{
 }
 .group-item{
   padding: 5px;
+  a{
+    text-decoration: none;
+    h4{
+
+      color: black;
+    }
+  }
 }
 .menu {
   .menu-item {
-    width: 70%;
+    width: 80%;
     margin: 10px;
     border-radius: 10px;
     color: white;

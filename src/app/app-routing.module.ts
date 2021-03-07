@@ -18,6 +18,14 @@ const routes: Routes = [
     path: 'planes',
     loadChildren: () => import('./plans/plans.module').then((m) => m.PlansModule),
   },
+  {
+    path: 'podcasts',
+    loadChildren: () => import('./podcasts/podcasts.module').then((m) => m.PodcastsModule),
+  },
+  {
+    path: 'eventos',
+    loadChildren: () => import('./events/events.module').then((m) => m.EventsModule),
+  },
   // {
   //   path: '**',
   //   redirectTo: 'auth',
