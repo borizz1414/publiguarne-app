@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LayoutComponent } from '../layout/layout.component';
-import { PodcastsComponent } from './containers/podcasts/podcasts.component';
+import { PodcastsContainer } from './containers/podcasts/podcasts.container';
 
 const routes: Routes = [
   {
@@ -9,7 +9,7 @@ const routes: Routes = [
     component:LayoutComponent,
     children:[{
       path:'',
-      component:PodcastsComponent
+      component:PodcastsContainer
 
 
     }]

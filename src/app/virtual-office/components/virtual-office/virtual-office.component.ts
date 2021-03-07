@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { navigationDashboard } from 'src/app/shared/navigations/navigation-dashboard';
+import { navigationDashboard } from 'src/app/shared/navigations/navigation';
 
 @Component({
   selector: 'app-virtual-office',

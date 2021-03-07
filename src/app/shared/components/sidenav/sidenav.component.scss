@@ -26,7 +26,7 @@ img{
     color: white;
     a {
       text-decoration: none;
-      color: white;
+      color: black;
     }
   }
   h3 {
@@ -37,7 +37,8 @@ img{
 }
 .active-bg {
   background: $primary;
-  h3 {
+ 
+  h3,a>h4 {
     color: white;
   }
 }

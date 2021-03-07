@@ -1,0 +1,16 @@
+@import "../../../theme/vars.scss";
+.title-card-podcasts{
+    font-family: 'Raleway-Bold';
+}
+.description-podcasts{
+    font-family: 'Raleway-Light';
+}
+.card-podcasts{
+    color: white;
+    width:29%;
+    text-align: center;
+    background: $primary;
+    margin-bottom: 20px;
+    padding: 18px;
+    border-radius: 20px;
+}

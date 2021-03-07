@@ -1,13 +1,14 @@
 <div class="menu d-flex f-direction-c">
     <ng-container *ngFor="let item of navigation">
-    <div class="menu-item"  routerLinkActive="active-bg">
+        <h3>{{item.header_title}}</h3>
+    <div class="menu-item"  [routerLinkActive]="item.activeLink">
         <a [routerLink]="item.url">
             <h3>{{item.title}}</h3>
         </a>
     </div>
         <div *ngFor="let group of item.children">
-            <div class="container-group">
-                <div class="group-item d-flex">
+            <div class="container-group" >
+                <div class="menu-item d-flex" [routerLinkActive]="group.activeLink">
                     <img [src]="group.icon" alt="">
                     <a [routerLink]="group.url">
                         <h4>{{group.title}}</h4>

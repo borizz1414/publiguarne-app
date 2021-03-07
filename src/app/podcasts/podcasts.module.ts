@@ -2,15 +2,18 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { PodcastsRoutingModule } from './podcasts-routing.module';
-import { PodcastsComponent } from './containers/podcasts/podcasts.component';
+import { PodcastsContainer } from './containers/podcasts/podcasts.container';
+import { SharedModule } from '../shared/shared.module';
+import { CardsPodcastsComponent } from './components/cards-podcasts/cards-podcasts.component';
 
 
 
 @NgModule({
-  declarations: [PodcastsComponent],
+  declarations: [PodcastsContainer, CardsPodcastsComponent],
   imports: [
     CommonModule,
-    PodcastsRoutingModule
+    PodcastsRoutingModule,
+    SharedModule
   ]
 })
 export class PodcastsModule { }

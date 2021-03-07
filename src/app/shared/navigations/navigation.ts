@@ -69,20 +69,42 @@ export const navigationEvents= [
     {
         title    : 'Eventos',
         type     : 'group',
-        url:'/eventos',
+        url:'',
+        activeLink:'',
         children : [
             {
                 title    : 'Eventos',
                 type     : 'item',
                 icon     : 'assets/img/sidenav/evento.png',
-                url      : '',
+                url:'/eventos',
+                activeLink:'active-bg',
             },
             {
                 title    : 'Calendario',
                 type     : 'item',
                 icon     : 'assets/img/sidenav/calendario.png',
-                url      : '',
+                url:'/calendario',
+                activeLink:'active-bg',
             }]  
+    },  
+
+];
+export const navigationPodcasts= [
+    
+    {
+        title    : 'Podcasts',
+        type     : 'group',
+        url:'',
+        activeLink:'',
+        children : [
+            {
+                title    : 'Podcasts',
+                type     : 'item',
+                activeLink:'active-bg',
+                icon     : 'assets/img/sidenav/radio.png',
+                url:'/podcasts',
+            },
+           ]  
     },  
 
 ];

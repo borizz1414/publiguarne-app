@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { navigationDashboard } from "../../../shared/navigations/navigation-dashboard";
+import { navigationDashboard } from "../../../shared/navigations/navigation";
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.container.html',

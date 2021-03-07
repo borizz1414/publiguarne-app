@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { navigationEvents } from 'src/app/shared/navigations/navigation-dashboard';
+import { navigationEvents } from 'src/app/shared/navigations/navigation';
 
 @Component({
   selector: 'app-events',
