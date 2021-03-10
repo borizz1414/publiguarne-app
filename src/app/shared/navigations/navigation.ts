@@ -4,14 +4,14 @@ export const navigationDashboard= [
     {
         title    : 'Directorio',
         type     : 'item',
-        url:'/directorio',
+        url:'/inicio/directorio',
         activeLink:'active-bg',
     },  
     {
         title    : 'Oficina Virtual',
         type     : 'group',
         activeLink:'active-bg',
-        url:'/oficina-virtual',
+        url:'/inicio/oficina-virtual',
         children : [
             {
                 title    : 'Agro',
@@ -70,7 +70,7 @@ export const navigationSocialWork= [
     {
         title    : 'Labor social',
         activeLink:'active-bg',
-        url:'/labor-social',
+        url:'/inicio/labor-social',
         children:[
             {
             text:'Publiguarne te escucha',
@@ -93,7 +93,7 @@ export const navigationClassified= [
     {
         title    : 'Clasificados',
         activeLink:'active-bg',
-        url:'/clasificados',
+        url:'/inicio/clasificados',
         children:[
             {
             text:'Bienes raices',

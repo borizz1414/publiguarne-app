@@ -7,12 +7,8 @@ const routes: Routes = [
     loadChildren: () => import('./auth/auth.module').then((m) => m.AuthModule),
   },
   {
-    path: 'directorio',
-    loadChildren: () => import('./directory/directory.module').then((m) => m.DirectoryModule),
-  },
-  {
-    path: 'oficina-virtual',
-    loadChildren: () => import('./virtual-office/virtual-office.module').then((m) => m.VirtualOfficeModule),
+    path: 'inicio',
+    loadChildren: () => import('./home/home.module').then((m) => m.HomeModule),
   },
   {
     path: 'planes',
@@ -27,17 +23,9 @@ const routes: Routes = [
     loadChildren: () => import('./events/events.module').then((m) => m.EventsModule),
   },
   {
-    path: 'clasificados',
-    loadChildren: () => import('./classified/classified.module').then((m) => m.ClassifiedModule),
+    path: '**',
+    redirectTo: 'inicio',
   },
-  {
-    path: 'labor-social',
-    loadChildren: () => import('./social-work/social-work.module').then((m) => m.SocialWorkModule),
-  },
-  // {
-  //   path: '**',
-  //   redirectTo: 'auth',
-  // },
 ];
 
 @NgModule({
