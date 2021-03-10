@@ -10,7 +10,9 @@ import { MatButtonModule } from '@angular/material/button';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatDatepickerModule} from '@angular/material/datepicker';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { MatNativeDateModule } from '@angular/material/core';
 @NgModule({
   declarations: [],
   imports: [
@@ -24,8 +26,11 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     MatDialogModule,
     MatMenuModule,
     MatSidenavModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
     /*FONT AWESOME*/
-    FontAwesomeModule
+    FontAwesomeModule,
+    
   ],
   exports: [
     MatCardModule,
@@ -37,6 +42,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     MatDialogModule,
     MatMenuModule,
     MatSidenavModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
     FontAwesomeModule,
   ],
 })

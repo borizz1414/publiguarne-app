@@ -16,15 +16,32 @@ input[type="text"] {
   border-radius: 10px;
   padding: 3px 3px;
   font-family: "Raleway-Light";
-  color: white;
 }
 
-mat-form-field {
+::ng-deep .mat-form-field-list-directory {
   width: 75%;
   background: #f5f5f5;
   padding: 3px 10px;
   border-radius: 10px;
-  color: white;
+  
+
+  
+   .mat-form-field-infix {
+
+    border: 0;
+  }
+   .mat-form-field-flex {
+    display: flex !important;
+    align-items: center !important;
+  }
+   .mat-form-field-underline {
+    height: 0px !important;
+    width: 0px !important;
+  }
+   .mat-form-field-wrapper {
+    padding-bottom: 0px !important;
+  }
+  
 }
 mat-icon {
   color: #c9c9c9;

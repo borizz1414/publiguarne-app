@@ -69,22 +69,28 @@ mat-form-field {
   color: white;
 }
 // NG DEEP
-::ng-deep .mat-form-field-label {
+::ng-deep .example-full-width {
   color: white !important;
-}
-::ng-deep .mat-form-field-infix {
+
+ .mat-form-field-infix {
+   span{
+     label{
+         color: white !important;
+     }
+   }
   border: 0;
 }
-::ng-deep .mat-form-field-flex {
+ .mat-form-field-flex {
   display: flex !important;
   align-items: center !important;
 }
-::ng-deep .mat-form-field-underline {
+ .mat-form-field-underline {
   height: 0px !important;
   width: 0px !important;
 }
-::ng-deep .mat-form-field-wrapper {
+ .mat-form-field-wrapper {
   padding-bottom: 0px !important;
+}
 }
 i{
   font-size: 22px;

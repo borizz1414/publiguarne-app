@@ -10,11 +10,13 @@ import { ListDirectoryComponent } from './components/list-directory/list-directo
 import { BannerRightComponent } from './components/banner-right/banner-right.component';
 import { ClassifiedComponent } from '../classified/components/classified/classified.component';
 import { ClassifiedModule } from '../classified/classified.module';
+import { ReactiveFormsModule } from '@angular/forms';
+import { SearchListComponent } from './components/search-list/search-list.component';
 
 
 @NgModule({
-  declarations: [DashboardContainer, PublicityComponent,ListDirectoryComponent,BannerRightComponent,],
+  declarations: [DashboardContainer, PublicityComponent,ListDirectoryComponent,BannerRightComponent, SearchListComponent,],
   exports:[PublicityComponent,ListDirectoryComponent,BannerRightComponent],
-  imports: [CommonModule, DirectoryRoutingModule, MaterialModule, SharedModule],
+  imports: [CommonModule, DirectoryRoutingModule, MaterialModule, SharedModule, ReactiveFormsModule],
 })
 export class DirectoryModule {}
