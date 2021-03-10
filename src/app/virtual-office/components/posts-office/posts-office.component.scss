@@ -28,21 +28,37 @@ textarea {
     font-family: "Raleway-Light";
     color: white;
   }
-  mat-form-field {
+ ::ng-deep .input-text-post{
     width: 95%;
     background: $secondary;
     padding: 0px 6px;
     border-radius: 30px;
-    label{
 
-      color: red;
-    }
     i{
       color:$primary;
       margin-right: 16px;
       font-size: 22px;
       cursor:pointer;
     }
+    .mat-form-field-infix {
+      span{
+        label{
+            color: white !important;
+        }
+      }
+     border: 0;
+   }
+    .mat-form-field-flex {
+     display: flex !important;
+     align-items: center !important;
+   }
+    .mat-form-field-underline {
+     height: 0px !important;
+     width: 0px !important;
+   }
+    .mat-form-field-wrapper {
+     padding-bottom: 0px !important;
+   }
   }
 textarea::placeholder{
   color: white;
