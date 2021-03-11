@@ -8,6 +8,7 @@ import { AdvertisementsAdminComponent } from './admin/components/advertisements-
 import { ClassifiedsAdminComponent } from './admin/components/classifieds-admin/classifieds-admin.component';
 import { LivesAdminComponent } from './admin/components/lives-admin/lives-admin.component';
 import { PodcastsAdminComponent } from './admin/components/podcasts-admin/podcasts-admin.component';
+import { BiographyComponent } from './containers/biography/biography.component';
 
 
 const routes: Routes = [{
@@ -19,7 +20,7 @@ const routes: Routes = [{
     component:AdminProfileContainer,
     children:[{
       path:'biografia',
-      component:PostsOfficeComponent
+      component:BiographyComponent
     },{
       path:'en-vivos',
       component:LivesAdminComponent
@@ -35,8 +36,7 @@ const routes: Routes = [{
     },{
       path:'clasificados',
       component:ClassifiedsAdminComponent
-    },
-    ,{
+    },{
       path:'directorio',
       component:PostsOfficeComponent
     },

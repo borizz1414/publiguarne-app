@@ -14,10 +14,11 @@ import { PodcastsAdminComponent } from './admin/components/podcasts-admin/podcas
 import { AdvertisementsAdminComponent } from './admin/components/advertisements-admin/advertisements-admin.component';
 import { AccountsAdminComponent } from './admin/components/accounts-admin/accounts-admin.component';
 import { ClassifiedsAdminComponent } from './admin/components/classifieds-admin/classifieds-admin.component';
+import { BiographyComponent } from './containers/biography/biography.component';
 
 
 @NgModule({
-  declarations: [HeaderProfileComponent, SidebarComponent, MenuComponent, AdminProfileContainer, DirectoryAdminComponent, LivesAdminComponent, PodcastsAdminComponent, AdvertisementsAdminComponent, AccountsAdminComponent, ClassifiedsAdminComponent],
+  declarations: [HeaderProfileComponent, SidebarComponent, MenuComponent, AdminProfileContainer, DirectoryAdminComponent, LivesAdminComponent, PodcastsAdminComponent, AdvertisementsAdminComponent, AccountsAdminComponent, ClassifiedsAdminComponent, BiographyComponent],
   exports: [HeaderProfileComponent, SidebarComponent, MenuComponent, AdminProfileContainer],
   imports: [
     CommonModule,
