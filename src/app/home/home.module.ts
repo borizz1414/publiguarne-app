@@ -20,7 +20,7 @@ import { CardClassifiedComponent } from './shared/components/card-classified/car
 
 @NgModule({
   declarations: [DashboardContainer, PublicityComponent,ListDirectoryComponent,BannerRightComponent, SearchListComponent,ClassifiedComponent, VirtualOfficeContainer, ClassifiedsContainer, SocialWorkContainer, PostsOfficeComponent, CardClassifiedComponent],
-  exports:[PublicityComponent,ListDirectoryComponent,BannerRightComponent],
+  exports:[PublicityComponent,ListDirectoryComponent,BannerRightComponent,PostsOfficeComponent],
   imports: [CommonModule, HomeRoutingModule, MaterialModule, SharedModule, ReactiveFormsModule],
 })
 export class HomeModule {}

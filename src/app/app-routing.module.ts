@@ -23,6 +23,10 @@ const routes: Routes = [
     loadChildren: () => import('./events/events.module').then((m) => m.EventsModule),
   },
   {
+    path: 'perfil',
+    loadChildren: () => import('./profile/profile.module').then((m) => m.ProfileModule),
+  },
+  {
     path: '**',
     redirectTo: 'inicio',
   },
