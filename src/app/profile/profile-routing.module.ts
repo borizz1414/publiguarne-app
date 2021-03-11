@@ -6,6 +6,7 @@ import { AdminProfileContainer } from './admin/admin-profile.container';
 import { AccountsAdminComponent } from './admin/components/accounts-admin/accounts-admin.component';
 import { AdvertisementsAdminComponent } from './admin/components/advertisements-admin/advertisements-admin.component';
 import { ClassifiedsAdminComponent } from './admin/components/classifieds-admin/classifieds-admin.component';
+import { DirectoryAdminComponent } from './admin/components/directory-admin/directory-admin.component';
 import { LivesAdminComponent } from './admin/components/lives-admin/lives-admin.component';
 import { PodcastsAdminComponent } from './admin/components/podcasts-admin/podcasts-admin.component';
 import { BiographyComponent } from './containers/biography/biography.component';
@@ -37,8 +38,8 @@ const routes: Routes = [{
       path:'clasificados',
       component:ClassifiedsAdminComponent
     },{
-      path:'directorio',
-      component:PostsOfficeComponent
+      path:'directorios',
+      component:DirectoryAdminComponent
     },
     {
       path:'**',

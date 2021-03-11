@@ -15,10 +15,11 @@ import { AdvertisementsAdminComponent } from './admin/components/advertisements-
 import { AccountsAdminComponent } from './admin/components/accounts-admin/accounts-admin.component';
 import { ClassifiedsAdminComponent } from './admin/components/classifieds-admin/classifieds-admin.component';
 import { BiographyComponent } from './containers/biography/biography.component';
+import { TableCrudComponent } from './components/table-crud/table-crud.component';
 
 
 @NgModule({
-  declarations: [HeaderProfileComponent, SidebarComponent, MenuComponent, AdminProfileContainer, DirectoryAdminComponent, LivesAdminComponent, PodcastsAdminComponent, AdvertisementsAdminComponent, AccountsAdminComponent, ClassifiedsAdminComponent, BiographyComponent],
+  declarations: [HeaderProfileComponent, SidebarComponent, MenuComponent, AdminProfileContainer, DirectoryAdminComponent, LivesAdminComponent, PodcastsAdminComponent, AdvertisementsAdminComponent, AccountsAdminComponent, ClassifiedsAdminComponent, BiographyComponent, TableCrudComponent],
   exports: [HeaderProfileComponent, SidebarComponent, MenuComponent, AdminProfileContainer],
   imports: [
     CommonModule,

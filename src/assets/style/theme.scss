@@ -85,6 +85,13 @@ input[type="checkbox"]:checked:after {
 .container-center{
   padding-right: 60px;
 }
+
+/* BUTTONS */
+.btn-publiguarne-secondary{
+  background: $secondary;
+  border-radius: 10px !important;
+  color:white
+}
 /* STYLES CUSTOMIZE */
 .input-login-root{
   padding: 10px;
@@ -144,3 +151,4 @@ text-align: justify;
 .flex-wrap-wrap{
   flex-wrap: wrap;
 }
+

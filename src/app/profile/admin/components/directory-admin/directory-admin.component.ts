@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./directory-admin.component.scss']
 })
 export class DirectoryAdminComponent implements OnInit {
-
+  page ="Directorios"
   constructor() { }
 
   ngOnInit(): void {

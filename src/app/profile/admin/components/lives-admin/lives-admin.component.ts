@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./lives-admin.component.scss']
 })
 export class LivesAdminComponent implements OnInit {
-
+  page ="En vivos"
   constructor() { }
 
   ngOnInit(): void {

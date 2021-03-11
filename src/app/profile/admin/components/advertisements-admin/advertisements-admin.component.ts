@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./advertisements-admin.component.scss']
 })
 export class AdvertisementsAdminComponent implements OnInit {
-
+  page ="Anuncios"
   constructor() { }
 
   ngOnInit(): void {
