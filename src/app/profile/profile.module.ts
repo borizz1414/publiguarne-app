@@ -21,11 +21,12 @@ import { AddPodcastsComponent } from './admin/shared/add-dialogs/add-podcasts/ad
 import { AddAdComponent } from './admin/shared/add-dialogs/add-ad/add-ad.component';
 import { AddDirectoryComponent } from './admin/shared/add-dialogs/add-directory/add-directory.component';
 import { AddClassifiedComponent } from './admin/shared/add-dialogs/add-classified/add-classified.component';
+import { EditAccountComponent } from './admin/shared/add-dialogs/edit-account/edit-account.component';
 
 
 
 @NgModule({
-  declarations: [HeaderProfileComponent, SidebarComponent, MenuComponent, AdminProfileContainer, DirectoryAdminComponent, LivesAdminComponent, PodcastsAdminComponent, AdvertisementsAdminComponent, AccountsAdminComponent, ClassifiedsAdminComponent, BiographyComponent, TableCrudComponent, AddLiveComponent, AddPodcastsComponent, AddAdComponent, AddDirectoryComponent, AddClassifiedComponent],
+  declarations: [HeaderProfileComponent, SidebarComponent, MenuComponent, AdminProfileContainer, DirectoryAdminComponent, LivesAdminComponent, PodcastsAdminComponent, AdvertisementsAdminComponent, AccountsAdminComponent, ClassifiedsAdminComponent, BiographyComponent, TableCrudComponent, AddLiveComponent, AddPodcastsComponent, AddAdComponent, AddDirectoryComponent, AddClassifiedComponent, EditAccountComponent],
   exports: [HeaderProfileComponent, SidebarComponent, MenuComponent, AdminProfileContainer],
   imports: [
     CommonModule,

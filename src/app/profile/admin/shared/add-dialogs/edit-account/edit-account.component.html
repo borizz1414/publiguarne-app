@@ -1,5 +1,5 @@
 <div class="header-dialog d-flex a-items-center j-content-sb">
-    <h1 mat-dialog-title >{{title}} clasificado</h1>
+    <h1 mat-dialog-title >{{title}} cuenta</h1>
     <i class="far fa-times-circle" (click)="close()"></i>
 </div>
 <!-- <form>-->
@@ -11,25 +11,24 @@
             <div class="icon-camera">
                 <i class="fas fa-camera"></i>
             </div>
-            <h4>Subir imagen del clasificado</h4>
+            <h4>Multiservicios Collazo</h4>
         </div>
         <div class="col-xs-8">
             <mat-form-field class="matform-add-live">
-                <label for="">Titulo *</label>
-                <input type="text" class="input-login-root" placeholder="Ingresa el titulo del clasificado">
+                <label for="">Estatus de la cuenta</label><br>
+                <select class="input-login-root">
+                    <option value="">Activa</option>
+                    <option value="">Desactiva</option>
+                </select>
             </mat-form-field>
             <mat-form-field class="matform-add-live">
-                <label for="">Descripción del clasificado</label>
-                <textarea class="input-login-root" rows="5" placeholder="Ingresa una descripción del clasificado"></textarea>
-            </mat-form-field>
-            <mat-form-field class="matform-add-live">
-                <label for="">¿Como quieres que te contacten?</label><br>
-                <div class="d-flex contact-input-classified">
-                <input type="text" class="input-login-root">
+                <label for="">Plan</label><br>
                 <select class="input-login-root">
                     <option value="">Seleccionar</option>
+                    <option value="">Estandar</option>
+                    <option value="">Medium</option>
+                    <option value="">Premium</option>
                 </select>
-            </div>
             </mat-form-field>
             <div class="btn-save d-flex j-content-fe">
                 <button mat-raised-button class="btn-publiguarne-primary">Guardar</button>

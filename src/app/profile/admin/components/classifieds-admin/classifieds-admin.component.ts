@@ -13,8 +13,8 @@ export class ClassifiedsAdminComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  addLive(e) {
-    const dialogRef = this.dialog.open(AddClassifiedComponent, {width: '500px'});
+  getEvent(action) {
+    const dialogRef = this.dialog.open(AddClassifiedComponent, {width: '500px', data: action});
   
   }
 

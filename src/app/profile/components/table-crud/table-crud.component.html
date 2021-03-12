@@ -2,7 +2,7 @@
     <div class="col-xs-12 card">
         <div class="header-card d-flex j-content-sb a-items-center">
             <mat-card-header><h2>{{title}}</h2></mat-card-header>
-            <div class="btn-add">
+            <div class="btn-add" *ngIf="title != 'Cuentas'">
                 <button mat-raised-button class="btn-publiguarne-secondary" (click)="getEvent('Agregar')">Agregar</button>
             </div>
         </div>

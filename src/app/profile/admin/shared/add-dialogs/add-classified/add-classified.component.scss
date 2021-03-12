@@ -1,0 +1,8 @@
+@import "../add-live/add-live.component.scss";
+@import "../../../../../theme/vars.scss";
+.contact-input-classified{
+    select{
+        background-color: $secondary;
+        color: white;
+    }
+}
