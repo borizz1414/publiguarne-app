@@ -14,7 +14,9 @@
 input{
     width: 100%;
 }
-
+.btn-search{
+    margin-left: 10px;
+}
 table{
     margin:20px 0px;
     width: 100%;
@@ -24,8 +26,9 @@ table{
     overflow: hidden;
     td{
         i{
-            margin:0px 5px;
+            margin:0px 10px;
             color:$primary;
+            cursor: pointer;
         }
         background: $secondary;
         p{

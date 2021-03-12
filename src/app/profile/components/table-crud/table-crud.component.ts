@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-table-crud',
@@ -7,9 +7,16 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class TableCrudComponent implements OnInit {
  @Input() title;
+ @Output() crud_event : EventEmitter<any> = new EventEmitter;
+
   constructor() { }
 
   ngOnInit(): void {
   }
+  getEvent(action){
+    this.crud_event.emit(action);
+  }
+  
+
 
 }

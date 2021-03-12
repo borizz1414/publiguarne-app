@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-admin-profile',
   templateUrl: './admin-profile.container.html',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdminProfileContainer implements OnInit {
 
-  constructor() { }
-
+  constructor() {}
   ngOnInit(): void {
   }
 
+
 }
+
+

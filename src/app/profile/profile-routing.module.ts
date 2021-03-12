@@ -11,49 +11,101 @@ import { LivesAdminComponent } from './admin/components/lives-admin/lives-admin.
 import { PodcastsAdminComponent } from './admin/components/podcasts-admin/podcasts-admin.component';
 import { BiographyComponent } from './containers/biography/biography.component';
 
-
-const routes: Routes = [{
-  path:'',
-  component:LayoutComponent,
-  children:[
-    {
-    path:'admin',
-    component:AdminProfileContainer,
-    children:[{
-      path:'biografia',
-      component:BiographyComponent
-    },{
-      path:'en-vivos',
-      component:LivesAdminComponent
-    },{
-      path:'podcasts',
-      component:PodcastsAdminComponent
-    },{
-      path:'anuncios',
-      component:AdvertisementsAdminComponent
-    },{
-      path:'cuentas',
-      component:AccountsAdminComponent
-    },{
-      path:'clasificados',
-      component:ClassifiedsAdminComponent
-    },{
-      path:'directorios',
-      component:DirectoryAdminComponent
-    },
-    {
-      path:'**',
-      redirectTo:'biografia',
-    }
-  ]
+const routes: Routes = [
+  {
+    path: '',
+    component: LayoutComponent,
+    children: [
+      {
+        path: 'admin',
+        component: AdminProfileContainer,
+        children: [
+          {
+            path: 'biografia',
+            component: BiographyComponent,
+          },
+          {
+            path: 'productos',
+            component: AdvertisementsAdminComponent,
+          },
+          {
+            path: 'como-llegar',
+            component: ClassifiedsAdminComponent,
+          },
+          {
+            path: 'comentarios',
+            component: DirectoryAdminComponent,
+          },
+          {
+            path: 'eventos',
+            component: DirectoryAdminComponent,
+          },
+          {
+            path: 'en-vivos',
+            component: LivesAdminComponent,
+          },
+          {
+            path: 'podcasts',
+            component: PodcastsAdminComponent,
+          },
+          {
+            path: 'anuncios',
+            component: AdvertisementsAdminComponent,
+          },
+          {
+            path: 'cuentas',
+            component: AccountsAdminComponent,
+          },
+          {
+            path: 'clasificados',
+            component: ClassifiedsAdminComponent,
+          },
+          {
+            path: 'directorios',
+            component: DirectoryAdminComponent,
+          },
+          {
+            path: '**',
+            redirectTo: 'biografia',
+          },
+        ],
+      },
+      {
+        path: 'oficina',
+        component: AdminProfileContainer,
+        children: [
+          {
+            path: 'biografia',
+            component: BiographyComponent,
+          },
+          {
+            path: 'productos',
+            component: AdvertisementsAdminComponent,
+          },
+          {
+            path: 'como-llegar',
+            component: ClassifiedsAdminComponent,
+          },
+          {
+            path: 'comentarios',
+            component: DirectoryAdminComponent,
+          },
+          {
+            path: 'eventos',
+            component: DirectoryAdminComponent,
+          },
+          {
+            path: '**',
+            redirectTo: 'biografia',
+          },
+        ],
+      },
+    ],
   },
-  
- 
-]
-}];
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class ProfileRoutingModule { }
+export class ProfileRoutingModule {}

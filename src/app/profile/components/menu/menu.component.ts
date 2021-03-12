@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-menu',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
-  constructor() { }
-
+  @Input() menu_activated;
+  constructor(private router: Router) {}
   ngOnInit(): void {
   }
+  isLinkActive(url): boolean {
+    const queryParamsIndex = this.router.url.indexOf('?');
+    const baseUrl = queryParamsIndex === -1 ? this.router.url : 
+    this.router.url.slice(0, queryParamsIndex);
+    return baseUrl === url;
+ }
 
 }

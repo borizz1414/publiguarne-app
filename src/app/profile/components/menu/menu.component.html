@@ -1,22 +1,22 @@
 <div class="row">
-    <div class="col-xs-offset-2 col-xs-10 d-flex">
-        <div class="item-menu">
-            <a routerLink="/perfil/admin/biografia"><p>Biografia</p></a>
+    <div class="col-xs-12 d-flex">
+        <div class="item-menu" [class.menu-selected]="isLinkActive('/perfil/'+menu_activated+'/biografia')">
+            <a  [routerLink]="['/perfil/'+menu_activated+'/biografia']"><p>Biografia</p></a>
         </div>
-        <div class="item-menu">
-            <a><p>Productos</p></a>
+        <div class="item-menu" [class.menu-selected]="isLinkActive('/perfil/'+menu_activated+'/productos')">
+            <a  [routerLink]="['/perfil/'+menu_activated+'/productos']"><p>Productos</p></a>
         </div>
-        <div class="item-menu">
-            <a><p>Como llegar</p></a>
+        <div class="item-menu" [class.menu-selected]="isLinkActive('/perfil/'+menu_activated+'/como-llegar')">
+            <a  [routerLink]="['/perfil/'+menu_activated+'/como-llegar']"><p>Como llegar</p></a>
         </div>
-        <div class="item-menu">
-            <a><p>Comentarios</p></a>
+        <div class="item-menu" [class.menu-selected]="isLinkActive('/perfil/'+menu_activated+'/comentarios')">
+            <a  [routerLink]="['/perfil/'+menu_activated+'/comentarios']"><p>Comentarios</p></a>
         </div>
-        <div class="item-menu">
-            <a><p>Eventos</p></a>
+        <div class="item-menu" [class.menu-selected]="isLinkActive('/perfil/'+menu_activated+'/eventos')">
+            <a  [routerLink]="['/perfil/'+menu_activated+'/eventos']"><p>Eventos</p></a>
         </div>
         <div class="item-menu d-flex a-items-center">
-            <a><p>Más </p></a>
+            <a [matMenuTriggerFor]="menu"><p>Más </p></a>
             <mat-icon [matMenuTriggerFor]="menu">expand_more</mat-icon>
             <mat-menu #menu="matMenu">
                 <a mat-menu-item routerLink="/perfil/admin/en-vivos">En vivo</a>

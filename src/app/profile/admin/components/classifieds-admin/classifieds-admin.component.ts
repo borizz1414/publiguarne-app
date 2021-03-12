@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { AddClassifiedComponent } from '../../shared/add-dialogs/add-classified/add-classified.component';
 
 @Component({
   selector: 'app-classifieds-admin',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ClassifiedsAdminComponent implements OnInit {
   page ="Clasificados"
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
+  }
+  addLive(e) {
+    const dialogRef = this.dialog.open(AddClassifiedComponent, {width: '500px'});
+  
   }
 
 }

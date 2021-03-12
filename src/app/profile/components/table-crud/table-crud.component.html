@@ -3,7 +3,7 @@
         <div class="header-card d-flex j-content-sb a-items-center">
             <mat-card-header><h2>{{title}}</h2></mat-card-header>
             <div class="btn-add">
-                <button mat-raised-button class="btn-publiguarne-secondary">Agregar</button>
+                <button mat-raised-button class="btn-publiguarne-secondary" (click)="getEvent('Agregar')">Agregar</button>
             </div>
         </div>
         <div class="filter-card">
@@ -11,6 +11,7 @@
                 <input type="tel" matInput placeholder="Buscar en vivos">
                 <mat-icon matSuffix>search</mat-icon>
             </mat-form-field>
+            <button mat-raised-button class="btn-search btn-publiguarne-secondary">Buscar</button>
         </div>
         <div class="table-card">
             <table mat-table class="table-crud">
@@ -21,37 +22,9 @@
             </tr>
             <tr>
                 <td><img src="assets/img/svg/laptop.svg" alt=""></td>
-                <td><p>dwdw</p></td>
+                <td><p>Bienes raices</p></td>
                 <td>
-                    <i class="far fa-edit"></i>
-                    <i class="far fa-trash-alt"></i></td>
-            </tr>
-            <tr>
-                <td><img src="assets/img/svg/laptop.svg" alt=""></td>
-                <td><p>dwdw</p></td>
-                <td>
-                    <i class="far fa-edit"></i>
-                    <i class="far fa-trash-alt"></i></td>
-            </tr>
-            <tr>
-                <td><img src="assets/img/svg/laptop.svg" alt=""></td>
-                <td><p>dwdw</p></td>
-                <td>
-                    <i class="far fa-edit"></i>
-                    <i class="far fa-trash-alt"></i></td>
-            </tr>
-            <tr>
-                <td><img src="assets/img/svg/laptop.svg" alt=""></td>
-                <td><p>dwdw</p></td>
-                <td>
-                    <i class="far fa-edit"></i>
-                    <i class="far fa-trash-alt"></i></td>
-            </tr>
-            <tr>
-                <td><img src="assets/img/svg/laptop.svg" alt=""></td>
-                <td><p>dwdw</p></td>
-                <td>
-                    <i class="far fa-edit"></i>
+                    <i class="far fa-edit" (click)="getEvent('Editar')"></i>
                     <i class="far fa-trash-alt"></i></td>
             </tr>
         </table>

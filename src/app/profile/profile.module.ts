@@ -16,10 +16,16 @@ import { AccountsAdminComponent } from './admin/components/accounts-admin/accoun
 import { ClassifiedsAdminComponent } from './admin/components/classifieds-admin/classifieds-admin.component';
 import { BiographyComponent } from './containers/biography/biography.component';
 import { TableCrudComponent } from './components/table-crud/table-crud.component';
+import { AddLiveComponent } from './admin/shared/add-dialogs/add-live/add-live.component';
+import { AddPodcastsComponent } from './admin/shared/add-dialogs/add-podcasts/add-podcasts.component';
+import { AddAdComponent } from './admin/shared/add-dialogs/add-ad/add-ad.component';
+import { AddDirectoryComponent } from './admin/shared/add-dialogs/add-directory/add-directory.component';
+import { AddClassifiedComponent } from './admin/shared/add-dialogs/add-classified/add-classified.component';
+
 
 
 @NgModule({
-  declarations: [HeaderProfileComponent, SidebarComponent, MenuComponent, AdminProfileContainer, DirectoryAdminComponent, LivesAdminComponent, PodcastsAdminComponent, AdvertisementsAdminComponent, AccountsAdminComponent, ClassifiedsAdminComponent, BiographyComponent, TableCrudComponent],
+  declarations: [HeaderProfileComponent, SidebarComponent, MenuComponent, AdminProfileContainer, DirectoryAdminComponent, LivesAdminComponent, PodcastsAdminComponent, AdvertisementsAdminComponent, AccountsAdminComponent, ClassifiedsAdminComponent, BiographyComponent, TableCrudComponent, AddLiveComponent, AddPodcastsComponent, AddAdComponent, AddDirectoryComponent, AddClassifiedComponent],
   exports: [HeaderProfileComponent, SidebarComponent, MenuComponent, AdminProfileContainer],
   imports: [
     CommonModule,

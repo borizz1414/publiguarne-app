@@ -90,8 +90,21 @@ input[type="checkbox"]:checked:after {
 .btn-publiguarne-secondary{
   background: $secondary;
   border-radius: 10px !important;
-  color:white
+  color:white;
+  padding: 4px 2px;
+  font-family: 'Raleway-Light';
 }
+.btn-publiguarne-primary{
+  background: $primary;
+  border-radius: 10px !important;
+  font-family: 'Raleway-Light';
+  color:white;
+  padding: 4px 2px;
+}
+/* WARNING !!!!!!!!!!!!! */ 
+
+
+
 /* STYLES CUSTOMIZE */
 .input-login-root{
   padding: 10px;

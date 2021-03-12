@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { AddPodcastsComponent } from '../../shared/add-dialogs/add-podcasts/add-podcasts.component';
 
 @Component({
   selector: 'app-podcasts-admin',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PodcastsAdminComponent implements OnInit {
   page ="Podcasts"
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
+  }
+  getEvent(action) {
+    const dialogRef = this.dialog.open(AddPodcastsComponent, {width: '500px', data: action});
+  
   }
 
 }

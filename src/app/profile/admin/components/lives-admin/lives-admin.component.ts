@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { AddLiveComponent } from '../../shared/add-dialogs/add-live/add-live.component';
 
 @Component({
   selector: 'app-lives-admin',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LivesAdminComponent implements OnInit {
   page ="En vivos"
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
+  }
+  getEvent(action) {
+    const dialogRef = this.dialog.open(AddLiveComponent, {width: '500px', data: action});
+  
   }
 
 }
