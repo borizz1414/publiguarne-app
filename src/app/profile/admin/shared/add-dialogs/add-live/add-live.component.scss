@@ -1,4 +1,7 @@
-@import "../../../../../theme/vars.scss";
+@import "../../~src/assets/style/vars.scss";
+
+    
+
 h1{
         font-family: 'Raleway-Bold';
         margin:0;
@@ -38,6 +41,7 @@ h1{
     border-radius: 20px  !important;
   }
 ::ng-deep .matform-add-live{
+    font-family: 'Raleway-Regular';
     p{
         margin: 5px 0px;
     font-size: 14px;

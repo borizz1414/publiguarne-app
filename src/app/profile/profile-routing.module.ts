@@ -1,15 +1,22 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { PostsOfficeComponent } from '../home/components/posts-office/posts-office.component';
 import { LayoutComponent } from '../layout/layout.component';
-import { AdminProfileContainer } from './admin/admin-profile.container';
-import { AccountsAdminComponent } from './admin/components/accounts-admin/accounts-admin.component';
-import { AdvertisementsAdminComponent } from './admin/components/advertisements-admin/advertisements-admin.component';
-import { ClassifiedsAdminComponent } from './admin/components/classifieds-admin/classifieds-admin.component';
-import { DirectoryAdminComponent } from './admin/components/directory-admin/directory-admin.component';
-import { LivesAdminComponent } from './admin/components/lives-admin/lives-admin.component';
-import { PodcastsAdminComponent } from './admin/components/podcasts-admin/podcasts-admin.component';
-import { BiographyComponent } from './containers/biography/biography.component';
+import { AdminProfileContainer } from './admin/containers/profile/admin-profile.container';
+
+import { PodcastsAdminComponent } from './admin/containers/podcasts-admin/podcasts-admin.component';
+import {  BiographyComponent } from './containers/biography/biography.component';
+import { OfficeProfileComponent } from './office/containers/office-profile/office-profile.component';
+import { ProductsComponent } from './containers/products/products.component';
+import { ToGetComponent } from './containers/to-get/to-get.component';
+import { CommentsComponent } from './containers/comments/comments.component';
+import { EventsContainer } from '../events/containers/events/events.container';
+import { EventsComponent } from './containers/events/events.component';
+import { AdvertisementsAdminComponent } from './admin/containers/advertisements-admin/advertisements-admin.component';
+import { ClassifiedsAdminComponent } from './admin/containers/classifieds-admin/classifieds-admin.component';
+import { DirectoryAdminComponent } from './admin/containers/directory-admin/directory-admin.component';
+import { LivesAdminComponent } from './admin/containers/lives-admin/lives-admin.component';
+import { AccountsAdminComponent } from './admin/containers/accounts-admin/accounts-admin.component';
+
 
 const routes: Routes = [
   {
@@ -26,19 +33,19 @@ const routes: Routes = [
           },
           {
             path: 'productos',
-            component: AdvertisementsAdminComponent,
+            component: ProductsComponent,
           },
           {
             path: 'como-llegar',
-            component: ClassifiedsAdminComponent,
+            component: ToGetComponent,
           },
           {
             path: 'comentarios',
-            component: DirectoryAdminComponent,
+            component: CommentsComponent,
           },
           {
             path: 'eventos',
-            component: DirectoryAdminComponent,
+            component: EventsComponent,
           },
           {
             path: 'en-vivos',
@@ -70,9 +77,10 @@ const routes: Routes = [
           },
         ],
       },
+      
       {
         path: 'oficina',
-        component: AdminProfileContainer,
+        component: OfficeProfileComponent,
         children: [
           {
             path: 'biografia',
@@ -80,18 +88,30 @@ const routes: Routes = [
           },
           {
             path: 'productos',
-            component: AdvertisementsAdminComponent,
+            component: ProductsComponent,
           },
           {
             path: 'como-llegar',
-            component: ClassifiedsAdminComponent,
+            component: ToGetComponent,
           },
           {
             path: 'comentarios',
-            component: DirectoryAdminComponent,
+            component: CommentsComponent,
           },
           {
             path: 'eventos',
+            component: EventsComponent,
+          },
+          {
+            path: 'anuncios',
+            component: AdvertisementsAdminComponent,
+          },
+          {
+            path: 'clasificados',
+            component: ClassifiedsAdminComponent,
+          },
+          {
+            path: 'directorios',
             component: DirectoryAdminComponent,
           },
           {

@@ -9,6 +9,7 @@ import { CardsEventsComponent } from './components/cards-events/cards-events.com
 
 @NgModule({
   declarations: [EventsContainer, CardsEventsComponent],
+  exports:[CardsEventsComponent],
   imports: [
     CommonModule,
     EventsRoutingModule,

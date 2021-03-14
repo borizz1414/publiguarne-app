@@ -1,4 +1,4 @@
-@import "../../../theme/vars.scss";
+@import "~src/assets/style/vars.scss";
 form {
   font-family: "Raleway-Medium";
 }
@@ -8,9 +8,7 @@ mat-card-title {
   text-align: initial;
   padding: 20px 0px 0px 28px;
 }
-// mat-card-content{
-//   0px 28px 0px 28px
-// }
+
 label {
   margin-bottom: 10px;
   color: #2d2d2d;

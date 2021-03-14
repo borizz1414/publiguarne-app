@@ -1,7 +1,7 @@
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
 @import "~@angular/material/theming";
-@import "../../app/theme/vars.scss";
+@import "../../app/~src/assets/style/vars.scss";
 
 // Plus imports for other components in your app.
 
@@ -88,6 +88,11 @@ input[type="checkbox"]:checked:after {
 
 /* BUTTONS */
 .btn-publiguarne-secondary{
+  i{
+    margin:0px 10px;
+  }
+  display: flex;
+  align-items: center;
   background: $secondary;
   border-radius: 10px !important;
   color:white;
@@ -95,6 +100,11 @@ input[type="checkbox"]:checked:after {
   font-family: 'Raleway-Light';
 }
 .btn-publiguarne-primary{
+  i{
+    margin:0px 10px;
+  }
+  display: flex;
+  align-items: center;
   background: $primary;
   border-radius: 10px !important;
   font-family: 'Raleway-Light';

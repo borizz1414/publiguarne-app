@@ -5,7 +5,7 @@
                 <mat-card-title>
                     Regístrate en Publiguarne
                 </mat-card-title>
-                <mat-card-content>
+                <ng-container>
                     <form [formGroup]="form" (ngSubmit)="register($event)" class="form-login" >
                         <div class="form-control">
                             <label for="name">Nombre completo *</label>
@@ -52,7 +52,7 @@
                             </div>
                         </div>
                     </div>
-                </mat-card-content>
+                </ng-container>
             </div>
         </div>
     </div>

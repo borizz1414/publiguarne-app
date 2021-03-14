@@ -1,8 +1,8 @@
-@import "../../../theme/vars.scss";
+@import "~src/assets/style/vars.scss";
 .item-menu{
     font-family: 'Raleway-Regular';
     text-align: center;
-    padding: 0px 14px;
+    padding: 0px 12px;
     mat-icon{
         cursor:pointer;
     }

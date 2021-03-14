@@ -1,4 +1,4 @@
-@import "../../../theme/vars.scss";
+@import "~src/assets/style/vars.scss";
 .card-event {
   // flex:1 1 75%;
   width: 33%;
@@ -10,6 +10,25 @@
   width: 100%;
   background-size: cover !important;
   background-position: center center !important;
+}
+.icons-actions{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
+  i{
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    margin:10px 5px;
+    border-radius: 50%;
+  }
+}
+#edit_card_icon{
+background: $secondary;
+}
+#delete_card_icon{
+background: red;
 }
 
 .container-cards {

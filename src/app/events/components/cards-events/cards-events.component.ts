@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-cards-events',
@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardsEventsComponent implements OnInit {
 a = 'assets/img/eventos.png'
+ @Input() icon_footer;
+ @Input() actions_icons;
+ @Input() title;
   constructor() { }
 
   ngOnInit(): void {

@@ -1,4 +1,4 @@
-@import "../../../theme//vars.scss";
+@import "~src/assets/style/vars.scss";
 .container-posts-office{
     margin-top: 30px;
 }
@@ -17,6 +17,9 @@
       margin: 0;
     }
   }
+}
+.mat-card-title{
+  padding: 0 !important;
 }
 textarea {
     background: $secondary;
