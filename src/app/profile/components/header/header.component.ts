@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-header-profile',
@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderProfileComponent implements OnInit {
-
+  @Input() name_user;
+  @Input() avatar;
   constructor() { }
 
   ngOnInit(): void {

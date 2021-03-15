@@ -15,7 +15,7 @@ constructor(public dialog: MatDialog) { }
 ngOnInit(): void {
 }
 getEvent(action) {
-  const dialogRef = this.dialog.open(EventDialogComponent, {width: '500px', data: action});
+  const dialogRef = this.dialog.open(EventDialogComponent, {width: '440px', data: action});
 
 }
 

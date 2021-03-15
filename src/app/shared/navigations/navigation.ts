@@ -130,7 +130,7 @@ export const navigationEvents= [
                 title    : 'Calendario',
                 type     : 'item',
                 icon     : 'assets/img/sidenav/calendario.png',
-                url:'/calendario',
+                url:'/eventos/calendario',
                 activeLink:'active-bg',
             }]  
     },  

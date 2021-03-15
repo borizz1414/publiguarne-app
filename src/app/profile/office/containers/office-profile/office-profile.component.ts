@@ -14,7 +14,7 @@ export class OfficeProfileComponent implements OnInit {
   ngOnInit(): void {
   }
   editProfile() {
-    const dialogRef = this.dialog.open(CompleteProfileComponent, {width: '520px'});
+    const dialogRef = this.dialog.open(CompleteProfileComponent, {width: '520px' ,data:'Completar'});
   
   }
 
