@@ -12,9 +12,9 @@ export class EventsComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  openForm(title_form){
+  openForm(action){
     this.open_form = !this.open_form;
-    this.title_form = title_form;
+    this.title_form = action;
   }
   getEvent(type){
     this.open_form = !this.open_form;

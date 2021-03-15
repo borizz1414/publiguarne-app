@@ -30,13 +30,14 @@ import { PodcastsAdminComponent } from './admin/containers/podcasts-admin/podcas
 import { AdvertisementsAdminComponent } from './admin/containers/advertisements-admin/advertisements-admin.component';
 import { AccountsAdminComponent } from './admin/containers/accounts-admin/accounts-admin.component';
 import { ClassifiedsAdminComponent } from './admin/containers/classifieds-admin/classifieds-admin.component';
+import { ProductDialogComponent } from './shared/dialogs/product-dialog/product-dialog.component';
 
 
 
 
 
 @NgModule({
-  declarations: [HeaderProfileComponent, SidebarComponent, MenuComponent, AdminProfileContainer, DirectoryAdminComponent, LivesAdminComponent, PodcastsAdminComponent, AdvertisementsAdminComponent, AccountsAdminComponent, ClassifiedsAdminComponent, BiographyComponent, TableCrudComponent, AddLiveComponent, AddPodcastsComponent, AddAdComponent, AddDirectoryComponent, AddClassifiedComponent, EditAccountComponent, ProductsComponent, ToGetComponent, CommentsComponent, OfficeProfileComponent, EventsComponent, CompleteProfileComponent ],
+  declarations: [HeaderProfileComponent, SidebarComponent, MenuComponent, AdminProfileContainer, DirectoryAdminComponent, LivesAdminComponent, PodcastsAdminComponent, AdvertisementsAdminComponent, AccountsAdminComponent, ClassifiedsAdminComponent, BiographyComponent, TableCrudComponent, AddLiveComponent, AddPodcastsComponent, AddAdComponent, AddDirectoryComponent, AddClassifiedComponent, EditAccountComponent, ProductsComponent, ToGetComponent, CommentsComponent, OfficeProfileComponent, EventsComponent, CompleteProfileComponent, ProductDialogComponent ],
   exports: [HeaderProfileComponent, SidebarComponent, MenuComponent, AdminProfileContainer],
   imports: [
     CommonModule,
