@@ -85,7 +85,11 @@ input[type="checkbox"]:checked:after {
 .container-center{
   padding-right: 60px;
 }
-
+/* DIALOGS */
+.mat-dialog-container {
+  padding: 18px !important;
+  border-radius: 20px !important;
+}
 /* BUTTONS */
 .btn-publiguarne-secondary{
   i{

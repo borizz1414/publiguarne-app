@@ -3,6 +3,6 @@
         <app-sidenav [navigation]="navigation"></app-sidenav>
     </div>
     <div class="col-xs-9 container-center">
-    <app-cards-events icon_footer="fas fa-arrow-right" [actions_icons]="false" title="Eventos"></app-cards-events>
+    <app-cards-events icon_footer="fas fa-arrow-right" [actions_icons]="false" title="Eventos" (event_icon)="getEvent($event)"></app-cards-events>
     </div>
 </div>
