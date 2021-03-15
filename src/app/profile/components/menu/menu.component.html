@@ -15,13 +15,14 @@
         <div class="item-menu" [class.menu-selected]="isLinkActive('/perfil/'+menu_activated+'/eventos')">
             <a  [routerLink]="['/perfil/'+menu_activated+'/eventos']"><p>Eventos</p></a>
         </div>
-        <div class="item-menu" [class.menu-selected]="isLinkActive('/perfil/'+menu_activated+'/anuncios')">
+        
+        <div *ngIf="menu_activated !== 'usuario'" class="item-menu" [class.menu-selected]="isLinkActive('/perfil/'+menu_activated+'/anuncios')">
             <a  [routerLink]="['/perfil/'+menu_activated+'/anuncios']"><p>Anuncios</p></a>
         </div>
-        <div class="item-menu" [class.menu-selected]="isLinkActive('/perfil/'+menu_activated+'/clasificados')">
+        <div *ngIf="menu_activated !== 'usuario'" class="item-menu" [class.menu-selected]="isLinkActive('/perfil/'+menu_activated+'/clasificados')">
             <a  [routerLink]="['/perfil/'+menu_activated+'/clasificados']"><p>Clasificados</p></a>
         </div>
-        <div class="item-menu" [class.menu-selected]="isLinkActive('/perfil/'+menu_activated+'/directorios')">
+        <div *ngIf="menu_activated !== 'usuario'" class="item-menu" [class.menu-selected]="isLinkActive('/perfil/'+menu_activated+'/directorios')">
             <a  [routerLink]="['/perfil/'+menu_activated+'/directorios']"><p>Directorios</p></a>
         </div>
         <div class="item-menu d-flex a-items-center" *ngIf="menu_activated === 'admin'">

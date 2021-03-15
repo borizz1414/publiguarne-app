@@ -32,7 +32,10 @@
                     </a>
                 </div>
                 <div class="nav-menu-icon">
-                    <mat-icon>live_tv</mat-icon>
+                    <mat-icon [matMenuTriggerFor]="menu">live_tv</mat-icon>      
+                        <mat-menu #menu="matMenu" class="mat-menu-office">
+                          <button mat-menu-item>Reportar publicación</button>
+                        </mat-menu>
                 </div>
                 <div class="nav-menu-icon">
                     <mat-icon>notifications</mat-icon>

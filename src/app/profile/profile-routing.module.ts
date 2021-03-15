@@ -4,7 +4,7 @@ import { LayoutComponent } from '../layout/layout.component';
 import { AdminProfileContainer } from './admin/containers/profile/admin-profile.container';
 
 import { PodcastsAdminComponent } from './admin/containers/podcasts-admin/podcasts-admin.component';
-import {  BiographyComponent } from './containers/biography/biography.component';
+import { BiographyComponent } from './containers/biography/biography.component';
 import { OfficeProfileComponent } from './office/containers/office-profile/office-profile.component';
 import { ProductsComponent } from './containers/products/products.component';
 import { ToGetComponent } from './containers/to-get/to-get.component';
@@ -16,9 +16,10 @@ import { ClassifiedsAdminComponent } from './admin/containers/classifieds-admin/
 import { DirectoryAdminComponent } from './admin/containers/directory-admin/directory-admin.component';
 import { LivesAdminComponent } from './admin/containers/lives-admin/lives-admin.component';
 import { AccountsAdminComponent } from './admin/containers/accounts-admin/accounts-admin.component';
-
+import { ProfileGuestContainer } from './guest-view/containers/profile-guest/profile-guest.container';
 
 const routes: Routes = [
+
   {
     path: '',
     component: LayoutComponent,
@@ -77,7 +78,7 @@ const routes: Routes = [
           },
         ],
       },
-      
+
       {
         path: 'oficina',
         component: OfficeProfileComponent,
@@ -119,6 +120,36 @@ const routes: Routes = [
             redirectTo: 'biografia',
           },
         ],
+      },
+      {
+        path: 'usuario',
+        component:ProfileGuestContainer,
+        children:[
+          {
+            path: 'biografia',
+            component: BiographyComponent,
+          },
+          {
+            path: 'productos',
+            component: ProductsComponent,
+          },
+          {
+            path: 'como-llegar',
+            component: ToGetComponent,
+          },
+          {
+            path: 'comentarios',
+            component: CommentsComponent,
+          },
+          {
+            path: 'eventos',
+            component: EventsComponent,
+          },
+          {
+            path: '**',
+            redirectTo: 'biografia',
+          },
+        ]
       },
     ],
   },
