@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./to-get.component.scss']
 })
 export class ToGetComponent implements OnInit {
-
+  open_form = false;
+  title="Mi ubicación"
   constructor() { }
 
   ngOnInit(): void {
