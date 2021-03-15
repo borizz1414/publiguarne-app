@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-cards-events',
@@ -10,9 +10,12 @@ a = 'assets/img/eventos.png'
  @Input() icon_footer;
  @Input() actions_icons;
  @Input() title;
+ @Output() event_icon : EventEmitter<any> = new EventEmitter;
   constructor() { }
 
   ngOnInit(): void {
   }
-
+  sendEvent(type){
+    this.event_icon.emit(type)
+  }
 }

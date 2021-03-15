@@ -9,7 +9,7 @@
                 <div class="img-card d-flex j-content-fe" [ngStyle]="{'background': 'url('+a+')'}">
                     <!-- ACTIONS ICONS INPUT -->
                     <div class="icons-actions" *ngIf="actions_icons">
-                        <i class="fas fa-edit" id="edit_card_icon"></i>
+                        <i class="fas fa-edit" id="edit_card_icon" (click)="sendEvent('Editar')"></i>
                         <i class="fas fa-trash-alt" id="delete_card_icon"></i>
                     </div>
                 <!-- END  -->
