@@ -1,5 +1,5 @@
 <div class="card">
-    <div class="d-flex j-content-fe">
+    <div class="d-flex j-content-fe" *ngIf="!invitado">
         <button mat-raised-button class="btn-publiguarne-secondary" (click)="openForm('Subir')"><i class="fas fa-plus"></i>Subir evento</button>
     </div>
     <div class="form_events" *ngIf="open_form">
@@ -74,5 +74,5 @@
         <!-- <f/orm>-->
             <p>O escoge un punto en el mapa</p>
     </div>
-<app-cards-events *ngIf="!open_form" icon_footer="fas fa-arrow-right" [actions_icons]="true" title="Eventos" (event_icon)="getEvent($event)"></app-cards-events>
+<app-cards-events *ngIf="!open_form" icon_footer="fas fa-arrow-right" [actions_icons]="false" title="Eventos" (event_icon)="getEvent($event)"></app-cards-events>
 </div>

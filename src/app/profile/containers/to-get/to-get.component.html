@@ -1,7 +1,7 @@
 <div class="card">
     <div class="d-flex j-content-sb header-card">
     <h2>{{title}}</h2>
-        <button mat-raised-button class="btn-publiguarne-secondary" (click)="open_form = !open_form; title='Editar ubicación'">Editar ubicación</button>
+        <button *ngIf="!invitado" mat-raised-button class="btn-publiguarne-secondary" (click)="open_form = !open_form; title='Editar ubicación'">Editar ubicación</button>
     </div>
     <div class="form_map" *ngIf="open_form">
         <div class="header-dialog d-flex a-items-center j-content-fe">

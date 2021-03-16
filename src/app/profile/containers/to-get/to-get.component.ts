@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ToGetComponent implements OnInit {
   open_form = false;
   title="Mi ubicación"
+  invitado = true;
   constructor() { }
 
   ngOnInit(): void {

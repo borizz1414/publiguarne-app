@@ -33,13 +33,14 @@ import { ClassifiedsAdminComponent } from './admin/containers/classifieds-admin/
 import { ProductDialogComponent } from './shared/dialogs/product-dialog/product-dialog.component';
 import { ProfileGuestContainer } from './guest-view/containers/profile-guest/profile-guest.container';
 import { ReactiveFormsModule } from '@angular/forms';
+import { BuyProductComponent } from './shared/dialogs/buy-product/buy-product.component';
 
 
 
 
 
 @NgModule({
-  declarations: [HeaderProfileComponent, SidebarComponent, MenuComponent, AdminProfileContainer, DirectoryAdminComponent, LivesAdminComponent, PodcastsAdminComponent, AdvertisementsAdminComponent, AccountsAdminComponent, ClassifiedsAdminComponent, BiographyComponent, TableCrudComponent, AddLiveComponent, AddPodcastsComponent, AddAdComponent, AddDirectoryComponent, AddClassifiedComponent, EditAccountComponent, ProductsComponent, ToGetComponent, CommentsComponent, OfficeProfileComponent, EventsComponent, CompleteProfileComponent, ProductDialogComponent, ProfileGuestContainer ],
+  declarations: [HeaderProfileComponent, SidebarComponent, MenuComponent, AdminProfileContainer, DirectoryAdminComponent, LivesAdminComponent, PodcastsAdminComponent, AdvertisementsAdminComponent, AccountsAdminComponent, ClassifiedsAdminComponent, BiographyComponent, TableCrudComponent, AddLiveComponent, AddPodcastsComponent, AddAdComponent, AddDirectoryComponent, AddClassifiedComponent, EditAccountComponent, ProductsComponent, ToGetComponent, CommentsComponent, OfficeProfileComponent, EventsComponent, CompleteProfileComponent, ProductDialogComponent, ProfileGuestContainer, BuyProductComponent ],
   exports: [HeaderProfileComponent, SidebarComponent, MenuComponent, AdminProfileContainer],
   imports: [
     CommonModule,

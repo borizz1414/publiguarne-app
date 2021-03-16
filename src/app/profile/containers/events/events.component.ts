@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { EventDialogComponent } from 'src/app/events/components/event-dialog/event-dialog.component';
 
 @Component({
   selector: 'app-events',
@@ -8,7 +10,8 @@ import { Component, OnInit } from '@angular/core';
 export class EventsComponent implements OnInit {
   open_form = false;
   title_form= "";
-  constructor() { }
+  invitado = true;
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
   }
@@ -17,8 +20,9 @@ export class EventsComponent implements OnInit {
     this.title_form = action;
   }
   getEvent(type){
-    this.open_form = !this.open_form;
     this.title_form = type;
+    type==="event_footer" ? this.dialog.open(EventDialogComponent, {width: '440px'})  : this.open_form = !this.open_form;
+
   }
 
 }
