@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { CommentsFeedbackComponent } from '../../shared/dialogs/comments-feedback/comments-feedback.component';
 
 @Component({
   selector: 'app-comments',
@@ -6,10 +8,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./comments.component.scss']
 })
 export class CommentsComponent implements OnInit {
+  constructor(public dialog: MatDialog) {}
+  invitado = true;
+  ngOnInit(): void {}
 
-  constructor() { }
+  eventComment(action) {
 
-  ngOnInit(): void {
+      this.dialog.open(CommentsFeedbackComponent, {
+        width: '400px',
+        data: action,
+      });
+
+
   }
-
 }

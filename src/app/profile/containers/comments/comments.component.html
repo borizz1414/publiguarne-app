@@ -71,6 +71,19 @@
                 </div>
             </div>
         </div>
-            
     </div>
+    </div>
+    <!-- SEPARAR COMPONENETE A FOLDER DE USER -->
+    <div class="send-comment-container">
+        <h3>Deja tu calificación</h3>
+        <div class="icon-star calification-stars">
+        <i class="fas fa-star" (click)="eventComment('calification')"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        3/5
+        </div>
+        <textarea class="textarea-comment" rows="10" placeholder="Ingresa tu comentario"></textarea>
+        <button mat-raised-button class="btn-publiguarne-primary" (click)="eventComment('comment')">Enviar comentario</button>
     </div>

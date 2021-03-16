@@ -11,7 +11,7 @@ import { ProductDialogComponent } from '../../shared/dialogs/product-dialog/prod
 export class ProductsComponent implements OnInit {
   // Obtener tipo de usuario y luego mostrar lo que sea dependiendo del usuario
   constructor(public dialog: MatDialog) {}
-  invitado = true;
+  invitado = false;
   ngOnInit(): void {}
   getEvent(action) {
     if (action === 'Agregar' || action === 'Editar') {

@@ -98,3 +98,27 @@ i{
 mat-icon{
   font-size: 24px;
 }
+::ng-deep  .mat-menu-live{
+  border-radius: 20px;
+  width: 400px;
+  .header-menu-live{
+    background: $secondary;
+    color:white;
+    padding: 5px;
+  }
+  .mat-menu-content{
+    padding:0 !important;
+  }
+  text-align: center;
+  padding: 0;
+  margin: 0;
+
+}
+.item-menu-live{
+  padding: 10px;
+  .description-menu-live{
+    p{
+      margin: 5px;
+    }
+  }
+}

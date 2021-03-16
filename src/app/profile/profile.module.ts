@@ -34,13 +34,14 @@ import { ProductDialogComponent } from './shared/dialogs/product-dialog/product-
 import { ProfileGuestContainer } from './guest-view/containers/profile-guest/profile-guest.container';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BuyProductComponent } from './shared/dialogs/buy-product/buy-product.component';
+import { CommentsFeedbackComponent } from './shared/dialogs/comments-feedback/comments-feedback.component';
 
 
 
 
 
 @NgModule({
-  declarations: [HeaderProfileComponent, SidebarComponent, MenuComponent, AdminProfileContainer, DirectoryAdminComponent, LivesAdminComponent, PodcastsAdminComponent, AdvertisementsAdminComponent, AccountsAdminComponent, ClassifiedsAdminComponent, BiographyComponent, TableCrudComponent, AddLiveComponent, AddPodcastsComponent, AddAdComponent, AddDirectoryComponent, AddClassifiedComponent, EditAccountComponent, ProductsComponent, ToGetComponent, CommentsComponent, OfficeProfileComponent, EventsComponent, CompleteProfileComponent, ProductDialogComponent, ProfileGuestContainer, BuyProductComponent ],
+  declarations: [HeaderProfileComponent, SidebarComponent, MenuComponent, AdminProfileContainer, DirectoryAdminComponent, LivesAdminComponent, PodcastsAdminComponent, AdvertisementsAdminComponent, AccountsAdminComponent, ClassifiedsAdminComponent, BiographyComponent, TableCrudComponent, AddLiveComponent, AddPodcastsComponent, AddAdComponent, AddDirectoryComponent, AddClassifiedComponent, EditAccountComponent, ProductsComponent, ToGetComponent, CommentsComponent, OfficeProfileComponent, EventsComponent, CompleteProfileComponent, ProductDialogComponent, ProfileGuestContainer, BuyProductComponent, CommentsFeedbackComponent ],
   exports: [HeaderProfileComponent, SidebarComponent, MenuComponent, AdminProfileContainer],
   imports: [
     CommonModule,

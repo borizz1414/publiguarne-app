@@ -33,8 +33,20 @@
                 </div>
                 <div class="nav-menu-icon">
                     <mat-icon [matMenuTriggerFor]="menu">live_tv</mat-icon>      
-                        <mat-menu #menu="matMenu" class="mat-menu-office">
-                          <button mat-menu-item>Reportar publicación</button>
+                        <mat-menu #menu="matMenu" class="mat-menu-live" xPosition="before">
+                          <div class="header-menu-live">
+                              1 Nuevo <br>
+                              Video en vivo
+                          </div>
+                          <div class="item-menu-live d-flex a-items-center j-content-se">
+                            <div class="photo-menu-live">
+                                foto
+                            </div>
+                            <div class="description-menu-live">
+                                <b>¡Nuevo video en vivo!</b>
+                                <p>Conociendo el talento de Publiguarne</p>
+                            </div>
+                        </div>
                         </mat-menu>
                 </div>
                 <div class="nav-menu-icon">
@@ -48,9 +60,9 @@
         <div class="col-xs-2 profile">
             <img src="assets/img/profile.png" alt="">
             <p>BRK</p>
-            <mat-icon [matMenuTriggerFor]="menu">expand_more</mat-icon>
-            <mat-menu #menu="matMenu">
-                <a mat-menu-item routerLink="/perfil">Perfil</a>
+            <mat-icon [matMenuTriggerFor]="menu_profile">expand_more</mat-icon>
+            <mat-menu #menu_profile="matMenu">
+                <a mat-menu-item routerLink="/perfil/usuario">Perfil</a>
                 <a mat-menu-item>Convertirme en Oficina</a>
                 <a mat-menu-item>Cerrar sesión</a>
             </mat-menu>
