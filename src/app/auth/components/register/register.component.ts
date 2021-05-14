@@ -2,32 +2,37 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { AuthDialogComponent } from '../../shared/auth-dialog/auth-dialog.component';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { AuthService } from '../../../core/services/auth.service';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.scss'],
 })
 export class RegisterComponent implements OnInit {
-  form: FormGroup;
-  constructor(public dialog: MatDialog, private fb: FormBuilder) {
+  formRegister: FormGroup;
+  constructor(public dialog: MatDialog, private fb: FormBuilder, private _auth: AuthService, private router: Router) {}
+
+  ngOnInit(): void {
     this.buildForm();
   }
-
-  ngOnInit(): void {}
-  private buildForm() {
-    this.form = this.fb.group({
+  buildForm(): void {
+    this.formRegister = this.fb.group({
       fullname: ['', Validators.required],
+      email: ['', [Validators.required, Validators.email]],
+      password: ['', [Validators.required]],
     });
   }
-  register(event) {
+  register(): void {
     const dialogRef = this.dialog.open(AuthDialogComponent, {
       width: '462px',
       data: { content: 'success' },
-      panelClass: 'custom-modal'
+      panelClass: 'custom-modal',
     });
 
     dialogRef.afterClosed().subscribe((result) => {
       console.log('The dialog was closed');
+      this.router.navigate(['/auth']);
     });
   }
 }

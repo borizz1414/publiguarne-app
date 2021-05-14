@@ -6,17 +6,25 @@
                     Iniciar sesión
                 </mat-card-title>
                 <ng-container>
-                    <form class="form-login">
+                    <form [formGroup]="formLogin" (ngSubmit)="login()">
                         <div class="form-control">
-                            <label for="">Usuario ó correo electrónico *</label>
-                            <input class="input-login-root" type="text"  placeholder="Ingresa tu usuario ó correo electrónico">
+                            <label>Usuario ó correo electrónico *</label>
+                            <input class="input-login-root" type="text" formControlName="email" required
+                                placeholder="Ingresa tu usuario ó correo electrónico">
+                            <mat-error *ngIf="formLogin.get('email').hasError('email') && formLogin.get('email').touched">Ingresa un email valido
+                            </mat-error>
+                            <mat-error *ngIf="formLogin.get('email').hasError('required') && formLogin.get('email').touched">El email es obligatorio
+                            </mat-error>
                         </div>
                         <div class="form-control form-password">
-                            <label for="">Contraseña *</label>
+                            <label>Contraseña *</label>
                             <div class="icon-input">
-                                <span class="icon-eye-off"><img src="assets/img/svg/icon-eye-off.svg" alt=""></span>
+                                <span class="icon-eye-off" (click)="showPassword()"><img src="assets/img/svg/icon-eye-off.svg" alt=""></span>
                             </div>
-                            <input class="input-login-root" type="password" placeholder="Ingresa tu contraseña">
+                            <input class="input-login-root" formControlName="password" required [type]="fieldTextType ? 'text' : 'password'"
+                                placeholder="Ingresa tu contraseña">
+                                <mat-error *ngIf="formLogin.get('password').hasError('required') && formLogin.get('password').touched">La contraseña es obligatoria
+                                </mat-error>
                         </div>
                         <div class="form-remember">
                             <div>
@@ -24,11 +32,17 @@
                                 <span>Recordar datos</span>
                             </div>
                             <div class="forgot-password">
-                                <a color='primary'>Olvidé mi contraseña</a>
+                                <a color='primary'>O-vidé mi contraseña</a>
                             </div>
                         </div>
                         <div class="submit">
-                            <button mat-raised-button color="primary">Ingresar</button>
+                            <button mat-raised-button color="primary" [disabled]="!formLogin.valid" type="submit">Ingresar</button>
+                        </div>
+                        <div>
+                            <pre>
+                {{formLogin.status | json}}
+                {{formLogin.value | json}}
+              </pre>
                         </div>
                         <div class="register">
                             ¿Quieres ser parte de Publiguarne? <a [routerLink]="['/auth/registro']"

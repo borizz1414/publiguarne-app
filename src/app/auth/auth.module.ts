@@ -9,6 +9,7 @@ import { RegisterComponent } from './components/register/register.component';
 import { RegisterOfficeComponent } from './components/register-office/register-office.component';
 import { AuthDialogComponent } from './shared/auth-dialog/auth-dialog.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
