@@ -122,14 +122,9 @@ i {
 }
 
 
-@media (min-width: 768px) {
+@media (max-width: 1024px) {
   .card-directory {
-    width:45%;
+    width:100%;
   }
 }
 
-@media (min-width: 1530px) {
-  .card-directory {
-    width: 43%;
-  }
-}

@@ -9,6 +9,7 @@ import { VirtualOfficeContainer } from './containers/virtual-office/virtual-offi
 const routes: Routes = [
   {
     path: '',
+    
     component: LayoutComponent,
     children: [
       {

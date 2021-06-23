@@ -4,6 +4,7 @@ import { AuthDialogComponent } from '../../shared/auth-dialog/auth-dialog.compon
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { AuthService } from '../../../core/services/auth.service';
 import { Router } from '@angular/router';
+import { GoogleLoginProvider, SocialAuthService } from 'angularx-social-login';
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
@@ -11,7 +12,15 @@ import { Router } from '@angular/router';
 })
 export class RegisterComponent implements OnInit {
   formRegister: FormGroup;
-  constructor(public dialog: MatDialog, private fb: FormBuilder, private _auth: AuthService, private router: Router) {}
+  user: any;
+  constructor(
+    public dialog: MatDialog,
+    private fb: FormBuilder,
+    // tslint:disable-next-line: variable-name
+    private _auth: AuthService,
+    private router: Router,
+    private socialService: SocialAuthService
+  ) {}
 
   ngOnInit(): void {
     this.buildForm();
@@ -32,7 +41,14 @@ export class RegisterComponent implements OnInit {
 
     dialogRef.afterClosed().subscribe((result) => {
       console.log('The dialog was closed');
-      this.router.navigate(['/auth']);
+      this.router.navigate(['/inicio/directorio']);
+    });
+  }
+  signInWithGoogle(): void {
+    this.socialService.signIn(GoogleLoginProvider.PROVIDER_ID);
+    this.socialService.authState.subscribe((user) => {
+      this.user = user;
+      console.log(this.user);
     });
   }
 }

@@ -1,15 +1,16 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { AuthService } from '../../../core/services/auth.service';
+import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { AuthService } from 'src/app/core/services/auth.service';
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss'],
+  selector: 'app-change-password',
+  templateUrl: './change-password.component.html',
+  styleUrls: ['./change-password.component.scss']
 })
-export class LoginComponent implements OnInit {
-  formLogin: FormGroup;
+export class ChangePasswordComponent implements OnInit {
+
+  form: FormGroup;
   fieldTextType: any;
   constructor(private fb: FormBuilder,
               // tslint:disable-next-line: variable-name
@@ -21,14 +22,13 @@ export class LoginComponent implements OnInit {
   }
 
   buildForm(): void{
-    this.formLogin = this.fb.group({
+    this.form = this.fb.group({
       email: ['', [Validators.required, Validators.email]],
-      password: ['', Validators.required],
     });
   }
 
   login(): void{
-    this._auth.login(this.formLogin).subscribe((resp: any) => {
+    this._auth.login(this.form).subscribe((resp: any) => {
       // this.router.navigate(['/inicio/directorio']);
     });
     this.router.navigate(['/inicio/directorio']);
@@ -37,4 +37,5 @@ export class LoginComponent implements OnInit {
   showPassword(): void{
   this.fieldTextType = !this.fieldTextType;
   }
+
 }

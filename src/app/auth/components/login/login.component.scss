@@ -3,6 +3,10 @@ form {
   font-family: "Raleway-Medium";
   padding: 12px;
 }
+
+a{
+  text-decoration: none;
+}
 mat-card-title {
   font-family: "Raleway-Bold";
   color: #2d2d2d;
@@ -56,7 +60,9 @@ label {
   margin-left: 5px;
 }
 .forgot-password {
-  color: $primary;
+  a{
+    color: $primary;
+  }
 }
 .submit {
   margin-top: 30px;

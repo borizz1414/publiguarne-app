@@ -51,7 +51,9 @@ input[type="text"] {
   align-items: center;
   img,
   p {
-    margin-left: 26px;
+    @media screen and (min-width:1024px) {
+      margin-left: 26px;
+    }
   }
   p,
   mat-icon {

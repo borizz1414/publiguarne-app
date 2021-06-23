@@ -10,10 +10,11 @@ import { RegisterOfficeComponent } from './components/register-office/register-o
 import { AuthDialogComponent } from './shared/auth-dialog/auth-dialog.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { ChangePasswordComponent } from './components/change-password/change-password.component';
 
 
 @NgModule({
-  declarations: [LoginComponent, RegisterComponent, RegisterOfficeComponent, AuthDialogComponent],
+  declarations: [LoginComponent, RegisterComponent, RegisterOfficeComponent, AuthDialogComponent, ChangePasswordComponent],
   imports: [
     CommonModule,
     AuthRoutingModule,

@@ -178,4 +178,48 @@ text-align: justify;
 .flex-wrap-wrap{
   flex-wrap: wrap;
 }
-
+@media only screen and (max-width:450px){
+  .hide-xs{
+    display: none !important;
+  }
+  .show-xs{
+    display: flex !important;
+  }
+  
+}
+@media only screen and (max-width:768px){
+  .hide-sm{
+    display: none !important;
+  }
+  .show-sm{
+    display: flex !important;
+  }
+  
+}
+@media only screen and (max-width:1024px){
+  .hide-md{
+    display: none !important;
+  }
+  .show-md{
+    display: flex !important;
+  }
+  
+}
+@media only screen and (max-width:1440px){
+  .hide-lg{
+    display: none !important;
+  }
+  .show-lg{
+    display: flex !important;
+  }
+  
+}
+@media only screen and (max-width:2560px){
+  .hide-xl{
+    display: none !important;
+  }
+  .show-xl{
+    display: flex !important;
+  }
+  
+}

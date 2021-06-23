@@ -13,6 +13,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MatNativeDateModule } from '@angular/material/core';
+import { FlexLayoutModule } from '@angular/flex-layout';
 @NgModule({
   declarations: [],
   imports: [
@@ -30,6 +31,8 @@ import { MatNativeDateModule } from '@angular/material/core';
     MatNativeDateModule,
     /*FONT AWESOME*/
     FontAwesomeModule,
+    FlexLayoutModule 
+
     
   ],
   exports: [
