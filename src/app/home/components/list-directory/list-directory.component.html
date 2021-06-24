@@ -1,10 +1,13 @@
 <div class="container-list-directory">
-    <div class="input-search d-flex j-content-sb">
+    <div  fxLayout="row">
+        <div  fxFlex="70">
         <mat-form-field class="mat-form-field-list-directory">
             <input type="text" matInput  placeholder="¿Qué estas buscando?">
             <mat-icon matSuffix>search</mat-icon>
         </mat-form-field>
-        <div class="search-button">
+    </div>
+
+        <div class="search-button" fxFlex="30">
             <button mat-raised-button color="accent">Buscar</button>
         </div>
     </div>
