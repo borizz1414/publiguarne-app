@@ -5,6 +5,7 @@ import { PodcastsRoutingModule } from './podcasts-routing.module';
 import { PodcastsContainer } from './containers/podcasts/podcasts.container';
 import { SharedModule } from '../shared/shared.module';
 import { CardsPodcastsComponent } from './components/cards-podcasts/cards-podcasts.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 
 
@@ -13,7 +14,8 @@ import { CardsPodcastsComponent } from './components/cards-podcasts/cards-podcas
   imports: [
     CommonModule,
     PodcastsRoutingModule,
-    SharedModule
+    SharedModule,
+    FlexLayoutModule
   ]
 })
 export class PodcastsModule { }

@@ -6,6 +6,7 @@ import { PlansQuestionsContainer} from './containers/plans/plans_questions.conta
 import { PlansComponent } from './components/plans/plans.component';
 import { MaterialModule } from '../material/material.module';
 import { ReactiveFormsModule } from '@angular/forms';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     CommonModule,
     MaterialModule,
     PlansRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FlexLayoutModule
   ]
 })
 export class PlansModule { }

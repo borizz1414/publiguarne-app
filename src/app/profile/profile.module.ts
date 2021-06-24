@@ -35,6 +35,7 @@ import { ProfileGuestContainer } from './guest-view/containers/profile-guest/pro
 import { ReactiveFormsModule } from '@angular/forms';
 import { BuyProductComponent } from './shared/dialogs/buy-product/buy-product.component';
 import { CommentsFeedbackComponent } from './shared/dialogs/comments-feedback/comments-feedback.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 
 
@@ -49,7 +50,8 @@ import { CommentsFeedbackComponent } from './shared/dialogs/comments-feedback/co
     HomeModule,
     MaterialModule,
     EventsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FlexLayoutModule
   ]
 })
 export class ProfileModule { }

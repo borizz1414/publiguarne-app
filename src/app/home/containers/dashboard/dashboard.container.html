@@ -1,19 +1,17 @@
-<div class="row">
-    <div class="col-sm-2 col-md-3 container-sidenav">
+<div fxLayout="row">
+    <div fxFlex.gt-md="25">
         <app-sidenav [navigation]="navigation"></app-sidenav>
          <app-classified [navigation]="navigationClassified"></app-classified>
         <app-classified [navigation]="navigationSocialWork"></app-classified> 
     </div>
-    <div class="col-xs-12 col-sm-8 col-md-6">
-        <div class="container-directory">
+    <div   fxFlex.gt-lg="50" fxFlex.lt-lg="75" fxFlex.lt-sm="100" fxFlexOffset="18px">
             <app-publicity></app-publicity>
             <app-list-directory></app-list-directory>
 
-        </div>
     </div>
-    <div class="col-sm-2 col-md-3">
+    <div fxFlex.gt-xs="25">
         <app-banner-right></app-banner-right>
-        <div class="calendar-home hide-sm">
+        <!-- <div class="calendar-home" fxHide.sm>
             <div class="header-calendar">
               <i class="fas fa-chevron-left"></i>
               MARZO
@@ -45,7 +43,7 @@
             <div class="content-calendar">
       
             </div>
-          </div>
+          </div> -->
     </div>
 
 </div>

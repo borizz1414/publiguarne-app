@@ -1,23 +1,57 @@
 // PUBLICIDAD
-.card{
-    flex:1 1 100%;
-    margin-right:14px;
-    background: #F7F7F7;
-    height: 200px;
-    border-radius: 10px;
-    box-shadow: 1px 1px 1px 1px white !important; 
+.card {
+  flex: 1 1 100%;
+  background: #f7f7f7;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px 1px white !important;
+}
+.container-directory {
+  padding-left: 20px;
+}
+.card-containers {
+  margin: 30px 18px;
+  position: relative;
+}
+
+@mixin button-publicity {
+  position: absolute;
+  height: 60px;
+  border-radius: 50% !important;
+  color: white;
+}
+
+.previus-button {
+  button{
+    @include button-publicity;
+    left: -30px;
   }
-  .container-directory{
-    padding-left: 20px;
+}
+.next-button {
+  button{
+    @include button-publicity;
+    right: -30px;
   }
-  .card-containers{
-    margin-top: 30px;
+}
+
+@media screen and (max-width: 1279px) {
+  @mixin button-next-prev {
+    bottom: -80px;
+    margin: 13px;
   }
-  .next-button{
-    button{
-      height: 60px;
-      border-radius: 50% !important;
-      margin-left: -40px;
-      color:white;
+  .card-containers {
+    margin-bottom: 80px;
+  }
+  .next-button {
+    button {
+      @include button-next-prev;
+      right: 2px;
     }
   }
+  .previus-button {
+    button {
+      @include button-next-prev;
+      left: 2px;
+    }
+  }
+}

@@ -12,6 +12,7 @@ import { FacebookLoginProvider, GoogleLoginProvider, SocialAuthServiceConfig, So
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,6 +25,8 @@ import { FacebookLoginProvider, GoogleLoginProvider, SocialAuthServiceConfig, So
     SharedModule,
     CoreModule,
     SocialLoginModule,
+    
+    
   ],
   providers: [
     {

@@ -16,11 +16,12 @@ import { ClassifiedsContainer } from './containers/classifieds/classifieds.conta
 import { SocialWorkContainer } from './containers/social-work/social-work.container';
 import { PostsOfficeComponent } from './components/posts-office/posts-office.component';
 import { CardClassifiedComponent } from './shared/components/card-classified/card-classified.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 
 @NgModule({
   declarations: [DashboardContainer, PublicityComponent,ListDirectoryComponent,BannerRightComponent, SearchListComponent,ClassifiedComponent, VirtualOfficeContainer, ClassifiedsContainer, SocialWorkContainer, PostsOfficeComponent, CardClassifiedComponent],
   exports:[PublicityComponent,ListDirectoryComponent,BannerRightComponent,PostsOfficeComponent],
-  imports: [CommonModule, HomeRoutingModule, MaterialModule, SharedModule, ReactiveFormsModule],
+  imports: [CommonModule, HomeRoutingModule, MaterialModule, SharedModule, ReactiveFormsModule, FlexLayoutModule],
 })
 export class HomeModule {}

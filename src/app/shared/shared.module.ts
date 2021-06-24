@@ -5,6 +5,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { MaterialModule } from '../material/material.module';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { RouterModule } from '@angular/router';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,6 @@ import { RouterModule } from '@angular/router';
     FooterComponent,
     SidenavComponent,
   ],
-  imports: [CommonModule, MaterialModule, RouterModule],
+  imports: [CommonModule, MaterialModule, RouterModule,FlexLayoutModule],
 })
 export class SharedModule {}

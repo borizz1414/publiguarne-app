@@ -9,8 +9,8 @@ import { RegisterComponent } from './components/register/register.component';
 import { RegisterOfficeComponent } from './components/register-office/register-office.component';
 import { AuthDialogComponent } from './shared/auth-dialog/auth-dialog.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
 import { ChangePasswordComponent } from './components/change-password/change-password.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 
 @NgModule({
@@ -19,7 +19,8 @@ import { ChangePasswordComponent } from './components/change-password/change-pas
     CommonModule,
     AuthRoutingModule,
     MaterialModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FlexLayoutModule
   ]
 })
 export class AuthModule { }

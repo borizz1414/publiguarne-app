@@ -31,7 +31,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatNativeDateModule,
     /*FONT AWESOME*/
     FontAwesomeModule,
-    FlexLayoutModule 
+    FlexLayoutModule
 
     
   ],

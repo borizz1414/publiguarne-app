@@ -1,6 +1,6 @@
-<div class="menu d-flex f-direction-c hide-md">
+<div class="menu d-flex f-direction-c" fxHide.lt-lg>
     <ng-container *ngFor="let item of navigation">
-        <div class="menu-item" [routerLinkActive]="[item.activeLink]">
+        <div class="menu-item title-menu" [routerLinkActive]="[item.activeLink]">
             <a [routerLink]="item.url">
                 <h3>{{item.title}}</h3>
             </a>
