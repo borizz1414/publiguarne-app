@@ -8,6 +8,7 @@ import { CardsEventsComponent } from './components/cards-events/cards-events.com
 import { EventDialogComponent } from './components/event-dialog/event-dialog.component';
 import { MaterialModule } from '../material/material.module';
 import { CalendarContainer} from './containers/calendar/calendar.container';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { CalendarContainer} from './containers/calendar/calendar.container';
     CommonModule,
     EventsRoutingModule,
     SharedModule,
-    MaterialModule
+    MaterialModule,
+    FlexLayoutModule
   ]
 })
 export class EventsModule { }

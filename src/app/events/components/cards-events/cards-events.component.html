@@ -4,8 +4,8 @@
             <h2>{{title}}</h2>
         </div>
     </div>
-    <div class="container-cards d-flex j-content-sb">
-        <div class="card-event">
+    <div class="container-cards" fxLayout="row" fxLayoutAlign="space-around start">
+        <div class="card-event"  fxFlex="30">
             <div class="img-card d-flex j-content-fe" [ngStyle]="{'background': 'url('+a+')'}">
                 <!-- ACTIONS ICONS INPUT -->
                 <div class="icons-actions" *ngIf="actions_icons">
@@ -29,7 +29,7 @@
                 </div>
             </div>
         </div>
-        <div class="card-event">
+        <div class="card-event"  fxFlex="30">
             <div class="img-card d-flex j-content-fe" [ngStyle]="{'background': 'url('+a+')'}">
                 <!-- ACTIONS ICONS INPUT -->
                 <div class="icons-actions" *ngIf="actions_icons">
@@ -53,7 +53,7 @@
                 </div>
             </div>
         </div>
-        <div class="card-event">
+        <div class="card-event"  fxFlex="30">
             <div class="img-card d-flex j-content-fe" [ngStyle]="{'background': 'url('+a+')'}">
                 <!-- ACTIONS ICONS INPUT -->
                 <div class="icons-actions" *ngIf="actions_icons">
