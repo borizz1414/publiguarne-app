@@ -1,7 +1,7 @@
 <header>
-    <nav class="row">
+    <nav fxLayout="row">
 
-        <div class="col-xs-2 col-sm-1">
+        <div fxFlex="10">
             <div class="row center-xs middle-xs items-nav">
                 <div class="col-xs-12">
                     <img id="logo" src="assets/img/logo/logo.png" (click)="redirectHome()" width="46px" alt="">
@@ -9,18 +9,17 @@
 
             </div>
         </div>
-        <div class="col-xs-2 col-sm-6">
+        <div fxFlex="40" fxFlex.lt-sm="20">
             <div class="row start-xs middle-xs items-nav">
-                <div class="col-xs-12">
-                    <mat-form-field class="input-search-header">
+                    <mat-form-field class="input-search-header" fxHide.lt-sm >
                         <input type="tel" matInput placeholder="Buscar en Publiguarne...">
                         <mat-icon matSuffix>search</mat-icon>
+
                     </mat-form-field>
-                </div>
-               
+                    <mat-icon matSuffix fxHide.gt-xs>search</mat-icon>
             </div>
         </div>
-        <div class="col-xs-5 col-sm-3">
+        <div fxFlex="40" fxFlexOffset.gt-md="20" fxFlex.lt-sm="60">
             <div class="nav-icons">
                 <div class="nav-menu-icon">
                     <a [routerLink]="[ '/podcasts' ]">
@@ -58,10 +57,10 @@
                 </div>
             </div>
         </div>
-        <div class="col-xs-3 col-sm-2 profile">
-            <img src="assets/img/profile.png" alt="">
-            <p fxHide.lt-md>BRK</p>
-            <mat-icon [matMenuTriggerFor]="menu_profile">expand_more</mat-icon>
+        <div class="profile" fxFlex="10">
+            <img  src="assets/img/profile.png" alt="">
+            <p [matMenuTriggerFor]="menu_profile" fxHide.lt-lg>BRK</p>
+            <!-- <mat-icon  fxHide.lt-md>expand_more</mat-icon> -->
             <mat-menu #menu_profile="matMenu">
                 <a mat-menu-item routerLink="/perfil/usuario">Perfil</a>
                 <a mat-menu-item>Convertirme en Oficina</a>

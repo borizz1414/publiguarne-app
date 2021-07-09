@@ -1,6 +1,6 @@
 @import "~src/assets/style/vars.scss";
 .header-profile{
-    height: 250px;
+    min-height: 250px;
     background: url('../../../../assets/img/fondo/fondo-login.png');
 background-size: cover;
 background-position: center center;
@@ -53,8 +53,11 @@ background-position: center center;
 }
 .social-networks {
     margin-top: 12px;
-    width: 95%;
+    @media screen and (max-width:1024px){
+        justify-content: center;
+    }
     justify-content: flex-end;
+    width: 95%;
 
   }
   .icon {
@@ -79,6 +82,7 @@ background-position: center center;
     padding: 10px 2px;
     border-radius: 10px;
     margin: 0px 5px;
+    max-width: 80px;
   }
   .icon-ws {
     color: white;

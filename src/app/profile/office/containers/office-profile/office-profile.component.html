@@ -1,9 +1,9 @@
 <app-header-profile name_user="BRK Soluciones Estructurales" avatar="assets/img/logo/logo-oficina.png"></app-header-profile>
-<div class="row">
-<div class="col-xs-offset-1 col-xs-8">
+<div fxLayout.gt-sm="row" fxLayout="column" class="container-menu-profile">
+<div fxFlex="80" fxFlexOffset="20px">
 <app-menu menu_activated="oficina"></app-menu>
 </div>
-<div class="col-xs-3 d-flex a-items-center">
+<div fxFlex="20" fxLayoutAlign="center center">
 <button  mat-raised-button class="btn-publiguarne-primary" (click)="editProfile()">Editar perfil</button>
 </div>
 </div>

@@ -21,7 +21,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [DashboardContainer, PublicityComponent,ListDirectoryComponent,BannerRightComponent, SearchListComponent,ClassifiedComponent, VirtualOfficeContainer, ClassifiedsContainer, SocialWorkContainer, PostsOfficeComponent, CardClassifiedComponent],
-  exports:[PublicityComponent,ListDirectoryComponent,BannerRightComponent,PostsOfficeComponent],
+  exports:[PublicityComponent,ListDirectoryComponent,BannerRightComponent,PostsOfficeComponent,ClassifiedComponent],
   imports: [CommonModule, HomeRoutingModule, MaterialModule, SharedModule, ReactiveFormsModule, FlexLayoutModule],
 })
 export class HomeModule {}

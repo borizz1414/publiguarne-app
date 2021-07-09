@@ -1,5 +1,6 @@
-<div class="row container-menu">
-    <div class="col-xs-12 d-flex">
+<div class="container-menu" fxLayout="row" fxLayoutAlign="center center">
+    <div fxLayout="row">
+
         <div class="item-menu" [class.menu-selected]="isLinkActive('/perfil/'+menu_activated+'/biografia')">
             <a  [routerLink]="['/perfil/'+menu_activated+'/biografia']"><p>Biografia</p></a>
         </div>
@@ -35,5 +36,7 @@
             </mat-menu>
         </div>
     
-    </div>
 </div>
+</div>
+
+<br>

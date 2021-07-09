@@ -5,17 +5,17 @@ import { CompleteProfileComponent } from '../../components/complete-profile/comp
 @Component({
   selector: 'app-office-profile',
   templateUrl: './office-profile.component.html',
-  styleUrls: ['./office-profile.component.scss']
+  styleUrls: ['./office-profile.component.scss'],
 })
 export class OfficeProfileComponent implements OnInit {
+  constructor(public dialog: MatDialog) {}
 
-  constructor(public dialog: MatDialog) { }
-
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
   editProfile() {
-    const dialogRef = this.dialog.open(CompleteProfileComponent, {width: '520px' ,data:'Completar'});
-  
+    const dialogRef = this.dialog.open(CompleteProfileComponent, {
+      maxWidth: '520px',
+      data: 'Completar',
+      maxHeight: '90vh',
+    });
   }
-
 }
