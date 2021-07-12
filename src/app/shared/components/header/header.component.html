@@ -9,14 +9,16 @@
 
             </div>
         </div>
-        <div fxFlex="40" fxFlex.lt-sm="20">
+        <div fxFlex="40" fxFlex.lt-sm="20" fxLayoutAlign.lt-sm="center center">
             <div class="row start-xs middle-xs items-nav">
                     <mat-form-field class="input-search-header" fxHide.lt-sm >
                         <input type="tel" matInput placeholder="Buscar en Publiguarne...">
                         <mat-icon matSuffix>search</mat-icon>
 
                     </mat-form-field>
-                    <mat-icon matSuffix fxHide.gt-xs>search</mat-icon>
+                    <div class="container-search-movil">
+                        <mat-icon matSuffix fxHide.gt-xs class="icon-search-movil">search</mat-icon>
+                    </div>
             </div>
         </div>
         <div fxFlex="40" fxFlexOffset.gt-md="20" fxFlex.lt-sm="60">
