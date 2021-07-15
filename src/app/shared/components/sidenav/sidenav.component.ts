@@ -7,6 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class SidenavComponent implements OnInit {
   @Input() navigation;
+  panelOpenState = false;
   constructor() {}
 
   ngOnInit(): void {

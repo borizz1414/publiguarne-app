@@ -14,7 +14,7 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MatNativeDateModule } from '@angular/material/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
-
+import {MatExpansionModule} from '@angular/material/expansion';
 @NgModule({
   declarations: [],
   imports: [
@@ -30,6 +30,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatSidenavModule,
     MatDatepickerModule,
     MatNativeDateModule,
+    MatExpansionModule,
     
     /*FONT AWESOME*/
     FontAwesomeModule,
@@ -50,6 +51,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatDatepickerModule,
     MatNativeDateModule,
     FontAwesomeModule,
+    MatExpansionModule
   ],
 })
 export class MaterialModule {}

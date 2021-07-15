@@ -39,6 +39,7 @@
   height: 60px;
   background-color: $secondary;
   color: white;
+  width: 100%;
 }
 
 .toggleSidenav {
@@ -52,4 +53,6 @@
 }
 .container-page{
   margin:0px 12px;
+  max-width: 900px;
+  // min-width: 900px;
 }

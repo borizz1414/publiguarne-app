@@ -8,12 +8,19 @@ img{
   margin-right: 12px;
   margin-left: 14px;
 }
+mat-expansion-panel{
+  box-shadow: none !important;
+  padding-right: 4px;
+}
+.mat-expansion-panel-header {
+  padding: 0px !important;
+}
 .group-item{
   padding: 5px;
   a{
     text-decoration: none;
-    h4{
-
+    p{
+      font-size: 22px;
       color: black;
     }
   }
@@ -25,7 +32,7 @@ img{
     // width: 200px;
   }
   .menu-item {
-  
+    width: 220px;
     margin: 10px;
     border-radius: 10px;
     color: white;
